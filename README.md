@@ -1,67 +1,115 @@
 # Majid Asghari Tabrizi
 
-```
+```text
 $ whoami
-builder · systems engineer · problem solver
+builder · systems engineer · DeFi architect
 
 $ focus
-DeFi infrastructure · MEV · autonomous trading · smart contracts
+autonomous trading · MEV infrastructure · smart contracts · production observability
 
 $ status
-building
+building systems that operate on-chain without human intervention
 ```
 
----
+<div align="center">
 
-## What I Build
+[![GitHub followers](https://img.shields.io/github/followers/MajidAsghariTabrizi?style=for-the-badge&logo=github&color=1f6feb)](https://github.com/MajidAsghariTabrizi)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/majid-asghari)
 
-**Autonomous Trading Systems**
-
-Building autonomous agents that detect, evaluate, and execute DeFi opportunities in real-time — with fork-verified simulation, economic controls, and fail-closed authority. Systems that operate on-chain without human intervention, where every submission is mathematically verified before execution.
-
-**Smart Contract Infrastructure**
-
-Solidity contracts and on-chain automation for liquidation engines, oracle integration, and protocol-level interactions. Foundry-based development with comprehensive test coverage and deterministic deployment.
-
-**Data & Observability**
-
-Pipeline systems that turn blockchain state, market signals, and operational telemetry into actionable decisions. Real-time dashboards, event-driven monitoring, and automated alerting for systems that never sleep.
+</div>
 
 ---
 
-## Featured Work
+## 🔥 What I Build
 
-| Project | Description | Stack |
-|---------|-------------|-------|
-| **[anti-gravity-phoenix-v4](https://github.com/MajidAsghariTabrizi/anti-gravity-phoenix-v4)** | Autonomous MEV agent on Arbitrum — fork-simulates liquidation routes, evaluates economics, executes with fail-closed controls | Rust · Solidity · Python · PostgreSQL |
-| **[SarafX](https://github.com/MajidAsghariTabrizi/SarafX)** | Crypto exchange infrastructure and trading bot | TypeScript · Node.js |
-| **[smart-trader](https://github.com/MajidAsghariTabrizi/smart-trader)** | Algorithmic trading system and market analysis | Python |
-| **[GMX](https://github.com/MajidAsghariTabrizi/GMX)** | GMX protocol integration and trading tools | Python |
+**Autonomous On-Chain Systems** — Production-grade agents that detect, validate, and execute DeFi opportunities in real-time. Every submission is mathematically verified through fork simulation and dual-provider agreement before it touches the chain.
+
+**MEV & Liquidation Intelligence** — Independent revenue lanes for Aave V3 liquidations, Atlas auction solving, and origin-aware V3 arbitrage. Each lane has its own armed state, kill switch, economic gate, and operational controls.
+
+**Smart Contract Infrastructure** — Solidity executors with minimum-profit guards, on-chain automation, and Foundry-based development with comprehensive fork test coverage.
+
+**Distributed Systems & Observability** — Multi-service architectures with NATS event streaming, PostgreSQL as economic truth, Prometheus metrics, and real-time dashboards. Systems that never sleep, and never lie about what they're doing.
 
 ---
 
-## Technical Stack
+## 🚀 Featured Work
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🔥 [anti-gravity-phoenix-v4](https://github.com/MajidAsghariTabrizi/anti-gravity-phoenix-v4)
+**Autonomous MEV agent on Arbitrum**
+
+Fork-simulates liquidation routes, evaluates economics with conservative PnL gates, and executes with fail-closed controls. Three independent revenue lanes:
+- `aave_liquidation` — Aave V3 liquidation intelligence
+- `atlas_solver` — Atlas auction monitoring & solving
+- `phoenix_dex` — V3-style origin-aware arbitrage research
+
+`Rust` `Solidity` `Go` `Python` `PostgreSQL` `NATS` `Docker`
+
+⭐ 2 stars · 🔧 14 open issues · 🟢 Active
+
+</td>
+<td width="50%" valign="top">
+
+### 📈 [smart-trader](https://github.com/MajidAsghariTabrizi/smart-trader)
+**Algorithmic trading system**
+
+Market analysis and automated decision-making for on-chain opportunities. Built around deterministic evaluation and bounded risk.
+
+`Python` `Trading Logic` `Market Data` `Risk Controls`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### ⚡ [GMX](https://github.com/MajidAsghariTabrizi/GMX)
+**Perpetual DEX integration**
+
+Direct integration with GMX — one of the largest on-chain perpetual exchanges. Real infrastructure that interacts with real liquidity.
+
+`Python` `DeFi` `Perpetuals` `On-chain Execution`
+
+</td>
+<td width="50%" valign="top">
+
+### 🌐 [Arbitrum](https://github.com/MajidAsghariTabrizi/Arbitrum)
+**Where it started**
+
+Product management and web development work on the Arbitrum ecosystem. The L2 where everything else runs. Foundation for 5+ years of on-chain building.
+
+`Product` `Web Dev` `L2` `Ecosystem`
+
+</td>
+</tr>
+</table>
+
+---
+
+## ⚙️ Technical Stack
 
 **Languages**
 `Rust` `Python` `TypeScript` `Solidity` `Go`
 
 **Backend & Infrastructure**
-`FastAPI` `Node.js` `PostgreSQL` `Docker` `GitHub Actions` `Linux`
+`FastAPI` `Node.js` `PostgreSQL` `Docker` `GitHub Actions` `Linux` `NATS JetStream`
 
 **Blockchain & DeFi**
-`Arbitrum` `Aave V3` `Foundry` `Ethers.js` `Uniswap V3` `GMX`
+`Arbitrum` `Aave V3` `Foundry` `Ethers.js` `Uniswap V3` `GMX` `Atlas`
 
 **Data & Observability**
-`Metabase` `Kibana` `Real-time Dashboards` `Event Processing`
+`Metabase` `Kibana` `Prometheus` `Real-time Dashboards` `Event Processing`
 
 **AI & Automation**
 `LLM Integration` `Autonomous Agents` `Event-driven Systems`
 
 ---
 
-## Engineering Principles
+## 🛡️ Engineering Principles
 
-```
+```text
 Build systems that are observable.
 Automate what should not require humans.
 Prefer simple architectures over unnecessary complexity.
@@ -69,28 +117,81 @@ Measure outcomes, not activity.
 Ship → observe → learn → improve.
 ```
 
+**Safety invariants I refuse to compromise on:**
+- Two independent providers required for any authority-bearing decision
+- Provider disagreement closes execution authority until fresh agreement
+- One global submission lock prevents conflicting transactions
+- Realized PnL recorded only after receipt and balance reconciliation
+- Unknown state blocks new authority — no-alpha is not an error
+
 ---
 
-## GitHub Activity
+## 🤖 AI-Assisted Engineering
+
+I'm an AI-assisted engineer. AI accelerates implementation, testing, debugging, and documentation. But **product definition, architecture, economic policy, risk boundaries, and operational decisions remain human-owned**.
+
+The question I keep exploring: *How can a product-oriented builder coordinate financial engineering, blockchain infrastructure, and distributed systems with a much smaller team surface?*
+
+Phoenix is the answer I'm shipping.
+
+---
+
+## 📊 GitHub Activity
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MajidAsghariTabrizi&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=79c0ff&text_color=c9d1d9&ring_color=1f6feb)
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=MajidAsghariTabrizi&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=79c0ff&text_color=c9d1d9&ring_color=1f6feb&include_all_commits=true&count_private=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MajidAsghariTabrizi&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8"/>
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MajidAsghariTabrizi&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9)
+</div>
+
+<div align="center">
+
+[![GitHub Streak](https://streak-stats.demolab.com/?user=MajidAsghariTabrizi&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=ff6b35&currStreakLabel=58a6ff)](https://git.io/streak-stats)
 
 </div>
 
 ---
 
-## Connect
+## 🔭 Current Focus
 
-[![GitHub](https://img.shields.io/badge/GitHub-MajidAsghariTabrizi-181717?style=flat-square&logo=github)](https://github.com/MajidAsghariTabrizi)
+```text
+Phoenix v4           → continuous protected LIVE hunting
+Aave lane            → armed, economic gate enforced
+Atlas solver         → armed, auction stream connected
+DEX research         → route policy + exact simulation
+```
+
+**The terminal state I'm working toward:**
+```text
+FIRST_POSITIVE_REALIZED_PNL
+```
+Valid only after: real transaction submitted → confirmed → balance-reconciled → positive net PnL recorded.
+
+A healthy production system can legitimately remain in:
+```text
+FULL_LIVE_NO_ALPHA
+```
+Live. Authority available. No opportunity currently passing every gate. **That's correct behavior.**
+
+---
+
+## 📫 Connect
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/majid-asghari) — for professional conversations
+- 🐙 [GitHub](https://github.com/MajidAsghariTabrizi) — for code and technical discussion
+- 📧 Open to interesting DeFi infrastructure, autonomous systems, and AI-assisted engineering conversations
 
 ---
 
 <div align="center">
 
-*Built with curiosity.*
+**Built with curiosity. Shipped with care.**
+
+```text
+$ uptime
+5+ years in the chain
+$ █
+```
 
 </div>
