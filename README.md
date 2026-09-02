@@ -6,9 +6,10 @@ builder · systems engineer · DeFi architect
 
 $ focus
 autonomous trading · MEV infrastructure · smart contracts · production observability
+              · AI infrastructure · LLM tooling
 
 $ status
-building systems that operate on-chain without human intervention
+shipping open-source AI infrastructure · building on-chain systems that operate without human intervention
 ```
 
 <div align="center">
@@ -30,15 +31,37 @@ building systems that operate on-chain without human intervention
 
 **Distributed Systems & Observability** — Multi-service architectures with NATS event streaming, PostgreSQL as economic truth, Prometheus metrics, and real-time dashboards. Systems that never sleep, and never lie about what they're doing.
 
+**AI Infrastructure & LLM Tooling** — Open-source routers, agents, and production integrations that turn the messy reality of LLM providers into a stable, observable product surface. Built for developers who want free AI capabilities without the operational complexity.
+
 ---
 
-## 🚀 Featured Work
+## 🏆 Featured Work
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🔥 [anti-gravity-phoenix-v4](https://github.com/MajidAsghariTabrizi/anti-gravity-phoenix-v4)
+### 🆕 [free-best-router](https://github.com/MajidAsghariTabrizi/free-best-router)
+**Open-source intelligent router for free AI models**
+
+One OpenAI-compatible endpoint that automatically discovers, ranks, health-checks, and routes to the best available free model across OpenRouter, OpenCode/Zen, Groq, Cerebras, Mistral, DeepSeek, and local inference servers.
+
+- 7-component capability-aware scoring (capability × reliability × latency)
+- Wilson lower bound on success rate + Bayesian shrinkage for under-sampled candidates
+- Per-failure-type cooldowns (429 = 8 min, 404 = 1 h) with exponential backoff
+- Smart exploration — 5% of requests probe non-incumbent healthy candidates
+- Bounded failover — 4 attempts × 45 s = 180 s wall time per request
+- **52 unit tests · GitHub Actions CI · 17 SEO topics**
+- DeepSeek Harness first-class integration
+
+`Node.js` `JavaScript` `OpenAI-compatible` `LLM Gateway` `Multi-Provider` `Smart Routing`
+
+🟢 **v0.1.0 released** · MIT · Public
+
+</td>
+<td width="50%" valign="top">
+
+### 🚀 [anti-gravity-phoenix-v4](https://github.com/MajidAsghariTabrizi/anti-gravity-phoenix-v4)
 **Autonomous MEV agent on Arbitrum**
 
 Fork-simulates liquidation routes, evaluates economics with conservative PnL gates, and executes with fail-closed controls. Three independent revenue lanes:
@@ -48,9 +71,11 @@ Fork-simulates liquidation routes, evaluates economics with conservative PnL gat
 
 `Rust` `Solidity` `Go` `Python` `PostgreSQL` `NATS` `Docker`
 
-⭐ 2 stars · 🔧 14 open issues · 🟢 Active
+⭐ 2 stars · 14 open issues · 🟢 Active
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 📈 [smart-trader](https://github.com/MajidAsghariTabrizi/smart-trader)
@@ -61,18 +86,18 @@ Market analysis and automated decision-making for on-chain opportunities. Built 
 `Python` `Trading Logic` `Market Data` `Risk Controls`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### ⚡ [GMX](https://github.com/MajidAsghariTabrizi/GMX)
-**Perpetual DEX integration**
+**Perpetual DeFi integration**
 
 Direct integration with GMX — one of the largest on-chain perpetual exchanges. Real infrastructure that interacts with real liquidity.
 
 `Python` `DeFi` `Perpetuals` `On-chain Execution`
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🌐 [Arbitrum](https://github.com/MajidAsghariTabrizi/Arbitrum)
@@ -83,6 +108,19 @@ Product management and web development work on the Arbitrum ecosystem. The L2 wh
 `Product` `Web Dev` `L2` `Ecosystem`
 
 </td>
+<td width="50%" valign="top">
+
+### 🤝 Open Source
+**Building in public**
+
+Beyond my own repos, I contribute to and learn from:
+- [`free-best-router`](https://github.com/MajidAsghariTabrizi/free-best-router) — my new LLM router
+- The Arbitrum / Aave / DeFi ecosystems
+- The Node.js / LLM tooling community
+
+If you're building open-source infrastructure — DeFi, AI, observability, or anything in between — let's connect.
+
+</td>
 </tr>
 </table>
 
@@ -91,10 +129,13 @@ Product management and web development work on the Arbitrum ecosystem. The L2 wh
 ## ⚙️ Technical Stack
 
 **Languages**
-`Rust` `Python` `TypeScript` `Solidity` `Go`
+`Rust` `Python` `TypeScript` `Solidity` `Go` `JavaScript`
 
 **Backend & Infrastructure**
 `FastAPI` `Node.js` `PostgreSQL` `Docker` `GitHub Actions` `Linux` `NATS JetStream`
+
+**AI / LLM Infrastructure**
+`Node.js` `JavaScript` `OpenAI-Compatible APIs` `Multi-Provider Routing` `LLM Gateway Design` `Capability-Aware Ranking` `Runtime Health Models` `Streaming & Tool-Calling` `DeepSeek Harness`
 
 **Blockchain & DeFi**
 `Arbitrum` `Aave V3` `Foundry` `Ethers.js` `Uniswap V3` `GMX` `Atlas`
@@ -133,6 +174,7 @@ I'm an AI-assisted engineer. AI accelerates implementation, testing, debugging, 
 The question I keep exploring: *How can a product-oriented builder coordinate financial engineering, blockchain infrastructure, and distributed systems with a much smaller team surface?*
 
 Phoenix is the answer I'm shipping.
+free-best-router is the next one.
 
 ---
 
@@ -159,7 +201,8 @@ Phoenix is the answer I'm shipping.
 Phoenix v4           → continuous protected LIVE hunting
 Aave lane            → armed, economic gate enforced
 Atlas solver         → armed, auction stream connected
-DEX research         → route policy + exact simulation
+free-best-router     → v0.1.0 shipped, community adoption phase
+LLM tooling          → next-gen agent infrastructure
 ```
 
 **The terminal state I'm working toward:**
@@ -170,7 +213,7 @@ Valid only after: real transaction submitted → confirmed → balance-reconcile
 
 A healthy production system can legitimately remain in:
 ```text
-FULL_LIVE_NO_ALPHA
+FULLY_LIVE_NO_ALPHA
 ```
 Live. Authority available. No opportunity currently passing every gate. **That's correct behavior.**
 
@@ -191,7 +234,7 @@ Live. Authority available. No opportunity currently passing every gate. **That's
 ```text
 $ uptime
 5+ years in the chain
-$ █
+$ ▌
 ```
 
 </div>
