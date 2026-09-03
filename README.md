@@ -72,7 +72,7 @@ One OpenAI-compatible endpoint that automatically discovers, ranks, health-check
 - Per-failure-type cooldowns (429 = 8 min, 404 = 1 h) with exponential backoff
 - Smart exploration -- 5% of requests probe non-incumbent healthy candidates
 - Bounded failover -- 4 attempts x 45 s = 180 s wall time per request
-- 52 unit tests -- GitHub Actions CI -- 17 SEO topics
+- Deterministic unit-test suite under `node --test` (see `test/`)
 - DeepSeek Harness first-class integration
 
 `Node.js` `OpenAI-compatible` `LLM Gateway` `Multi-Provider` `Smart Routing`
