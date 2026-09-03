@@ -2,14 +2,14 @@
 
 ```text
 $ whoami
-builder · systems engineer · DeFi architect
+builder > systems engineer > DeFi architect
 
 $ focus
-autonomous trading · MEV infrastructure · smart contracts · production observability
-              · AI infrastructure · LLM tooling
+autonomous trading > MEV infrastructure > smart contracts > production observability
+              > AI infrastructure > LLM tooling
 
 $ status
-shipping open-source AI infrastructure · building on-chain systems that operate without human intervention
+shipping open-source AI infrastructure > building on-chain systems that operate without human intervention
 ```
 
 <div align="center">
@@ -21,64 +21,85 @@ shipping open-source AI infrastructure · building on-chain systems that operate
 
 ---
 
-## 🔥 What I Build
+## What I Build
 
-**Autonomous On-Chain Systems** — Production-grade agents that detect, validate, and execute DeFi opportunities in real-time. Every submission is mathematically verified through fork simulation and dual-provider agreement before it touches the chain.
+**Autonomous On-Chain Systems** -- Production-grade agents that detect, validate, and execute DeFi opportunities in real-time. Every submission is mathematically verified through fork simulation and dual-provider agreement before it touches the chain.
 
-**MEV & Liquidation Intelligence** — Independent revenue lanes for Aave V3 liquidations, Atlas auction solving, and origin-aware V3 arbitrage. Each lane has its own armed state, kill switch, economic gate, and operational controls.
+**MEV & Liquidation Intelligence** -- Independent revenue lanes for Aave V3 liquidations, Atlas auction solving, and origin-aware V3 arbitrage. Each lane has its own armed state, kill switch, economic gate, and operational controls.
 
-**Smart Contract Infrastructure** — Solidity executors with minimum-profit guards, on-chain automation, and Foundry-based development with comprehensive fork test coverage.
+**Smart Contract Infrastructure** -- Solidity executors with minimum-profit guards, on-chain automation, and Foundry-based development with comprehensive fork test coverage.
 
-**Distributed Systems & Observability** — Multi-service architectures with NATS event streaming, PostgreSQL as economic truth, Prometheus metrics, and real-time dashboards. Systems that never sleep, and never lie about what they're doing.
+**Distributed Systems & Observability** -- Multi-service architectures with NATS event streaming, PostgreSQL as economic truth, Prometheus metrics, and real-time dashboards. Systems that never sleep, and never lie about what they are doing.
 
-**AI Infrastructure & LLM Tooling** — Open-source routers, agents, and production integrations that turn the messy reality of LLM providers into a stable, observable product surface. Built for developers who want free AI capabilities without the operational complexity.
+**AI Infrastructure & LLM Tooling** -- Open-source routers, agents, and production integrations that turn the messy reality of LLM providers into a stable, observable product surface. Built for developers who want free AI capabilities without the operational complexity.
 
 ---
 
-## 🏆 Featured Work
+## Featured Work
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🆕 [free-best-router](https://github.com/MajidAsghariTabrizi/free-best-router)
-**Open-source intelligent router for free AI models**
+### [universal-engineering-agent](https://github.com/MajidAsghariTabrizi/universal-engineering-agent)
+**Open-source engineering-agent operating kernel**
 
-One OpenAI-compatible endpoint that automatically discovers, ranks, health-checks, and routes to the best available free model across OpenRouter, OpenCode/Zen, Groq, Cerebras, Mistral, DeepSeek, and local inference servers.
+A standalone, MIT-licensed reference implementation of the 9-stage UEA operating-kernel contract. Profile-agnostic, runnable, zero runtime dependencies.
 
-- 7-component capability-aware scoring (capability × reliability × latency)
-- Wilson lower bound on success rate + Bayesian shrinkage for under-sampled candidates
-- Per-failure-type cooldowns (429 = 8 min, 404 = 1 h) with exponential backoff
-- Smart exploration — 5% of requests probe non-incumbent healthy candidates
-- Bounded failover — 4 attempts × 45 s = 180 s wall time per request
-- **52 unit tests · GitHub Actions CI · 17 SEO topics**
-- DeepSeek Harness first-class integration
+- 9 stages: inspect, plan, implement, tool-hygiene, verify, classify, recover, test, generalize
+- 10-class deterministic failure classifier (no model inference, no network call)
+- Bounded recovery with non-retryable fall-through
+- Staged verification reading commands from your own package.json
+- 31 self-tests under plain node --test
+- 6-command CLI: inspect, plan, verify, classify, test, scan
+- 3 example missions + 1 sample workspace + 1 reference profile
+- Sibling to free-best-router (model routing vs. engineering coordination)
 
-`Node.js` `JavaScript` `OpenAI-compatible` `LLM Gateway` `Multi-Provider` `Smart Routing`
+`Node.js` `Operating Kernel` `Verification` `Failure Classification` `Profile-Driven` `DeepSeek Harness`
 
-🟢 **v0.1.0 released** · MIT · Public
+**v0.1.0 released** -- MIT -- Public
 
 </td>
 <td width="50%" valign="top">
 
-### 🚀 [anti-gravity-phoenix-v4](https://github.com/MajidAsghariTabrizi/anti-gravity-phoenix-v4)
-**Autonomous MEV agent on Arbitrum**
+### [free-best-router](https://github.com/MajidAsghariTabrizi/free-best-router)
+**Open-source intelligent router for free AI models**
 
-Fork-simulates liquidation routes, evaluates economics with conservative PnL gates, and executes with fail-closed controls. Three independent revenue lanes:
-- `aave_liquidation` — Aave V3 liquidation intelligence
-- `atlas_solver` — Atlas auction monitoring & solving
-- `phoenix_dex` — V3-style origin-aware arbitrage research
+One OpenAI-compatible endpoint that automatically discovers, ranks, health-checks, and routes to the best available free model across OpenRouter, OpenCode/Zen, Groq, Cerebras, Mistral, DeepSeek, and local inference servers.
 
-`Rust` `Solidity` `Go` `Python` `PostgreSQL` `NATS` `Docker`
+- 7-component capability-aware scoring (capability x reliability x latency)
+- Wilson lower bound on success rate + Bayesian shrinkage for under-sampled candidates
+- Per-failure-type cooldowns (429 = 8 min, 404 = 1 h) with exponential backoff
+- Smart exploration -- 5% of requests probe non-incumbent healthy candidates
+- Bounded failover -- 4 attempts x 45 s = 180 s wall time per request
+- 52 unit tests -- GitHub Actions CI -- 17 SEO topics
+- DeepSeek Harness first-class integration
 
-⭐ 2 stars · 14 open issues · 🟢 Active
+`Node.js` `OpenAI-compatible` `LLM Gateway` `Multi-Provider` `Smart Routing`
+
+**v0.1.0 released** -- MIT -- Public
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 📈 [smart-trader](https://github.com/MajidAsghariTabrizi/smart-trader)
+### [anti-gravity-phoenix-v4](https://github.com/MajidAsghariTabrizi/anti-gravity-phoenix-v4)
+**Autonomous MEV agent on Arbitrum**
+
+Fork-simulates liquidation routes, evaluates economics with conservative PnL gates, and executes with fail-closed controls. Three independent revenue lanes:
+- `aave_liquidation` -- Aave V3 liquidation intelligence
+- `atlas_solver` -- Atlas auction monitoring and solving
+- `phoenix_dex` -- V3-style origin-aware arbitrage research
+
+`Rust` `Solidity` `Go` `Python` `PostgreSQL` `NATS` `Docker`
+
+2 stars -- 14 open issues -- Active
+
+</td>
+<td width="50%" valign="top">
+
+### [smart-trader](https://github.com/MajidAsghariTabrizi/smart-trader)
 **Algorithmic trading system**
 
 Market analysis and automated decision-making for on-chain opportunities. Built around deterministic evaluation and bounded risk.
@@ -86,21 +107,21 @@ Market analysis and automated decision-making for on-chain opportunities. Built 
 `Python` `Trading Logic` `Market Data` `Risk Controls`
 
 </td>
-<td width="50%" valign="top">
-
-### ⚡ [GMX](https://github.com/MajidAsghariTabrizi/GMX)
-**Perpetual DeFi integration**
-
-Direct integration with GMX — one of the largest on-chain perpetual exchanges. Real infrastructure that interacts with real liquidity.
-
-`Python` `DeFi` `Perpetuals` `On-chain Execution`
-
-</td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🌐 [Arbitrum](https://github.com/MajidAsghariTabrizi/Arbitrum)
+### [GMX](https://github.com/MajidAsghariTabrizi/GMX)
+**Perpetual DeFi integration**
+
+Direct integration with GMX -- one of the largest on-chain perpetual exchanges. Real infrastructure that interacts with real liquidity.
+
+`Python` `DeFi` `Perpetuals` `On-chain Execution`
+
+</td>
+<td width="50%" valign="top">
+
+### [Arbitrum](https://github.com/MajidAsghariTabrizi/Arbitrum)
 **Where it started**
 
 Product management and web development work on the Arbitrum ecosystem. The L2 where everything else runs. Foundation for 5+ years of on-chain building.
@@ -108,25 +129,29 @@ Product management and web development work on the Arbitrum ecosystem. The L2 wh
 `Product` `Web Dev` `L2` `Ecosystem`
 
 </td>
-<td width="50%" valign="top">
-
-### 🤝 Open Source
-**Building in public**
-
-Beyond my own repos, I contribute to and learn from:
-- [`free-best-router`](https://github.com/MajidAsghariTabrizi/free-best-router) — my new LLM router
-- The Arbitrum / Aave / DeFi ecosystems
-- The Node.js / LLM tooling community
-
-If you're building open-source infrastructure — DeFi, AI, observability, or anything in between — let's connect.
-
-</td>
 </tr>
 </table>
 
 ---
 
-## ⚙️ Technical Stack
+## The UEA + Free Best Router Ecosystem
+
+```
+DSH session
+  +-- UEA kernel (engineering loop)
+        +-- llm block --> free-best-router --> upstream free providers
+```
+
+| Project | Answers |
+|---|---|
+| [universal-engineering-agent](https://github.com/MajidAsghariTabrizi/universal-engineering-agent) | How should the agent perform engineering work reliably? |
+| [free-best-router](https://github.com/MajidAsghariTabrizi/free-best-router) | Which model should the agent use? |
+
+They are siblings. Stack, not overlap.
+
+---
+
+## Technical Stack
 
 **Languages**
 `Rust` `Python` `TypeScript` `Solidity` `Go` `JavaScript`
@@ -135,7 +160,7 @@ If you're building open-source infrastructure — DeFi, AI, observability, or an
 `FastAPI` `Node.js` `PostgreSQL` `Docker` `GitHub Actions` `Linux` `NATS JetStream`
 
 **AI / LLM Infrastructure**
-`Node.js` `JavaScript` `OpenAI-Compatible APIs` `Multi-Provider Routing` `LLM Gateway Design` `Capability-Aware Ranking` `Runtime Health Models` `Streaming & Tool-Calling` `DeepSeek Harness`
+`Node.js` `OpenAI-Compatible APIs` `Multi-Provider Routing` `LLM Gateway Design` `Capability-Aware Ranking` `Runtime Health Models` `Streaming & Tool-Calling` `DeepSeek Harness`
 
 **Blockchain & DeFi**
 `Arbitrum` `Aave V3` `Foundry` `Ethers.js` `Uniswap V3` `GMX` `Atlas`
@@ -148,14 +173,14 @@ If you're building open-source infrastructure — DeFi, AI, observability, or an
 
 ---
 
-## 🛡️ Engineering Principles
+## Engineering Principles
 
 ```text
 Build systems that are observable.
 Automate what should not require humans.
 Prefer simple architectures over unnecessary complexity.
 Measure outcomes, not activity.
-Ship → observe → learn → improve.
+Ship > observe > learn > improve.
 ```
 
 **Safety invariants I refuse to compromise on:**
@@ -163,22 +188,22 @@ Ship → observe → learn → improve.
 - Provider disagreement closes execution authority until fresh agreement
 - One global submission lock prevents conflicting transactions
 - Realized PnL recorded only after receipt and balance reconciliation
-- Unknown state blocks new authority — no-alpha is not an error
+- Unknown state blocks new authority -- no-alpha is not an error
 
 ---
 
-## 🤖 AI-Assisted Engineering
+## AI-Assisted Engineering
 
-I'm an AI-assisted engineer. AI accelerates implementation, testing, debugging, and documentation. But **product definition, architecture, economic policy, risk boundaries, and operational decisions remain human-owned**.
+I am an AI-assisted engineer. AI accelerates implementation, testing, debugging, and documentation. But **product definition, architecture, economic policy, risk boundaries, and operational decisions remain human-owned**.
 
 The question I keep exploring: *How can a product-oriented builder coordinate financial engineering, blockchain infrastructure, and distributed systems with a much smaller team surface?*
 
-Phoenix is the answer I'm shipping.
-free-best-router is the next one.
+Phoenix is the answer I am shipping.
+free-best-router and universal-engineering-agent are the next ones.
 
 ---
 
-## 📊 GitHub Activity
+## GitHub Activity
 
 <div align="center">
 
@@ -195,35 +220,36 @@ free-best-router is the next one.
 
 ---
 
-## 🔭 Current Focus
+## Current Focus
 
 ```text
-Phoenix v4           → continuous protected LIVE hunting
-Aave lane            → armed, economic gate enforced
-Atlas solver         → armed, auction stream connected
-free-best-router     → v0.1.0 shipped, community adoption phase
-LLM tooling          → next-gen agent infrastructure
+Phoenix v4           > continuous protected LIVE hunting
+Aave lane            > armed, economic gate enforced
+Atlas solver         > armed, auction stream connected
+free-best-router     > v0.1.0 shipped, community adoption phase
+universal-engineering-agent > v0.1.0 shipped, DSH ecosystem launch
+LLM tooling          > next-gen agent infrastructure
 ```
 
-**The terminal state I'm working toward:**
+**The terminal state I am working toward:**
 ```text
 FIRST_POSITIVE_REALIZED_PNL
 ```
-Valid only after: real transaction submitted → confirmed → balance-reconciled → positive net PnL recorded.
+Valid only after: real transaction submitted > confirmed > balance-reconciled > positive net PnL recorded.
 
 A healthy production system can legitimately remain in:
 ```text
 FULLY_LIVE_NO_ALPHA
 ```
-Live. Authority available. No opportunity currently passing every gate. **That's correct behavior.**
+Live. Authority available. No opportunity currently passing every gate. **That is correct behavior.**
 
 ---
 
-## 📫 Connect
+## Connect
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/majid-asghari) — for professional conversations
-- 🐙 [GitHub](https://github.com/MajidAsghariTabrizi) — for code and technical discussion
-- 📧 Open to interesting DeFi infrastructure, autonomous systems, and AI-assisted engineering conversations
+- [LinkedIn](https://www.linkedin.com/in/majid-asghari) -- for professional conversations
+- [GitHub](https://github.com/MajidAsghariTabrizi) -- for code and technical discussion
+- Open to interesting DeFi infrastructure, autonomous systems, and AI-assisted engineering conversations
 
 ---
 
@@ -234,7 +260,7 @@ Live. Authority available. No opportunity currently passing every gate. **That's
 ```text
 $ uptime
 5+ years in the chain
-$ ▌
+$ _
 ```
 
 </div>
