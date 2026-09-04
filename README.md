@@ -2,7 +2,7 @@
 
 # MAJID ASGHARI
 
-**Product Lead Ã— AI Ã— Systems**
+**Product Lead — AI — Systems**
 
 Building intelligent systems, developer infrastructure & AI-native products.
 
