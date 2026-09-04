@@ -35,27 +35,7 @@ Building intelligent systems, developer infrastructure & AI-native products.
 
 <br/>
 
-<table width="100%">
-<tr>
-<td width="40%" valign="middle" align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=MajidAsghariTabrizi&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=8b949e&icon_color=7c5cff&text_color=c9d1d9&ring_color=7c5cff&include_all_commits=true&count_private=true" width="400"/>
-
-</td>
-<td width="30%" valign="middle" align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MajidAsghariTabrizi&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=8b949e&text_color=c9d1d9&langs_count=6&ring_color=7c5cff" width="320"/>
-
-</td>
-<td width="30%" valign="middle" align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=MajidAsghariTabrizi&theme=dark&hide_border=true&background=0d1117&ring=7c5cff&fire=7c5cff&currStreakLabel=8b949e" width="380"/>
-
-</td>
-</tr>
-</table>
-
-<br/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=MajidAsghariTabrizi&bg_color=0d1117&color=7c5cff&line=7c5cff&point=ffffff&area=true&area_color=7c5cff&hide_border=true" width="900"/>
 
 </div>
 
