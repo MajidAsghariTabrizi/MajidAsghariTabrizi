@@ -1,132 +1,127 @@
-# Majid Asghari Tabrizi
-
-```text
-$ whoami
-builder > systems engineer > DeFi architect
-
-$ focus
-autonomous trading > MEV infrastructure > smart contracts > production observability
-              > AI infrastructure > LLM tooling
-
-$ status
-shipping open-source AI infrastructure > building on-chain systems that operate without human intervention
-```
-
 <div align="center">
 
-[![GitHub followers](https://img.shields.io/github/followers/MajidAsghariTabrizi?style=for-the-badge&logo=github&color=1f6feb)](https://github.com/MajidAsghariTabrizi)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/majid-asghari)
+# MAJID ASGHARI
+
+**Product Lead × AI × Systems**
+
+Building intelligent systems, developer infrastructure & AI-native products.
+
+*Designing and shipping systems where product thinking meets serious engineering.*
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/majid-asghari)
+[![GitHub](https://img.shields.io/badge/GitHub-MajidAsghariTabrizi-181717?style=flat&logo=github&logoColor=white)](https://github.com/MajidAsghariTabrizi)
 
 </div>
 
 ---
 
-## What I Build
+<div align="center">
 
-**Autonomous On-Chain Systems** -- Production-grade agents that detect, validate, and execute DeFi opportunities in real-time. Every submission is mathematically verified through fork simulation and dual-provider agreement before it touches the chain.
+### Systems Map
 
-**MEV & Liquidation Intelligence** -- Independent revenue lanes for Aave V3 liquidations, Atlas auction solving, and origin-aware V3 arbitrage. Each lane has its own armed state, kill switch, economic gate, and operational controls.
+<img src="systems-map.svg" width="700" alt="Technical systems constellation — AI, Systems, Product, Automation, Blockchain, Trading, Infrastructure, Open Source, Developer Tools connected through an intelligent network"/>
 
-**Smart Contract Infrastructure** -- Solidity executors with minimum-profit guards, on-chain automation, and Foundry-based development with comprehensive fork test coverage.
-
-**Distributed Systems & Observability** -- Multi-service architectures with NATS event streaming, PostgreSQL as economic truth, Prometheus metrics, and real-time dashboards. Systems that never sleep, and never lie about what they are doing.
-
-**AI Infrastructure & LLM Tooling** -- Open-source routers, agents, and production integrations that turn the messy reality of LLM providers into a stable, observable product surface. Built for developers who want free AI capabilities without the operational complexity.
+</div>
 
 ---
 
-## Featured Work
+## Building in Public
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=MajidAsghariTabrizi&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=8b949e&icon_color=7c5cff&text_color=c9d1d9&ring_color=7c5cff&include_all_commits=true&count_private=true" height="170"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MajidAsghariTabrizi&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=8b949e&text_color=c9d1d9&langs_count=8&ring_color=7c5cff" height="170"/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=MajidAsghariTabrizi&theme=dark&hide_border=true&background=0d1117&ring=7c5cff&fire=7c5cff&currStreakLabel=8b949e" width="400"/>
+
+</div>
+
+---
+
+## Selected Systems
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### [universal-engineering-agent](https://github.com/MajidAsghariTabrizi/universal-engineering-agent)
-**Open-source engineering-agent operating kernel**
+### [Anti-Gravity Phoenix](https://github.com/MajidAsghariTabrizi/anti-gravity-phoenix-v4)
 
-A standalone, MIT-licensed reference implementation of the 9-stage UEA operating-kernel contract. Profile-agnostic, runnable, zero runtime dependencies.
+**Safety-first blockchain execution infrastructure.**
 
-- 9 stages: inspect, plan, implement, tool-hygiene, verify, classify, recover, test, generalize
-- 10-class deterministic failure classifier (no model inference, no network call)
-- Bounded recovery with non-retryable fall-through
-- Staged verification reading commands from your own package.json
-- 31 self-tests under plain node --test
-- 6-command CLI: inspect, plan, verify, classify, test, scan
-- 3 example missions + 1 sample workspace + 1 reference profile
-- Sibling to free-best-router (model routing vs. engineering coordination)
-
-`Node.js` `Operating Kernel` `Verification` `Failure Classification` `Profile-Driven` `DeepSeek Harness`
-
-**v0.1.0 released** -- MIT -- Public
-
-</td>
-<td width="50%" valign="top">
-
-### [free-best-router](https://github.com/MajidAsghariTabrizi/free-best-router)
-**Open-source intelligent router for free AI models**
-
-One OpenAI-compatible endpoint that automatically discovers, ranks, health-checks, and routes to the best available free model across OpenRouter, OpenCode/Zen, Groq, Cerebras, Mistral, DeepSeek, and local inference servers.
-
-- 7-component capability-aware scoring (capability x reliability x latency)
-- Wilson lower bound on success rate + Bayesian shrinkage for under-sampled candidates
-- Per-failure-type cooldowns (429 = 8 min, 404 = 1 h) with exponential backoff
-- Smart exploration -- 5% of requests probe non-incumbent healthy candidates
-- Bounded failover -- 4 attempts x 45 s = 180 s wall time per request
-- Deterministic unit-test suite under `node --test` (see `test/`)
-- DeepSeek Harness first-class integration
-
-`Node.js` `OpenAI-compatible` `LLM Gateway` `Multi-Provider` `Smart Routing`
-
-**v0.1.0 released** -- MIT -- Public
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### [anti-gravity-phoenix-v4](https://github.com/MajidAsghariTabrizi/anti-gravity-phoenix-v4)
-**Autonomous MEV agent on Arbitrum**
-
-Fork-simulates liquidation routes, evaluates economics with conservative PnL gates, and executes with fail-closed controls. Three independent revenue lanes:
-- `aave_liquidation` -- Aave V3 liquidation intelligence
-- `atlas_solver` -- Atlas auction monitoring and solving
-- `phoenix_dex` -- V3-style origin-aware arbitrage research
+Fail-closed, AI-assisted financial system for Arbitrum. Three independent revenue lanes — Aave V3 liquidations, Atlas auction solving, and origin-aware DEX arbitrage. Dual-provider agreement, conservative economic gate, submission-unknown state machine, protected release lifecycle.
 
 `Rust` `Solidity` `Go` `Python` `PostgreSQL` `NATS` `Docker`
 
-2 stars -- 14 open issues -- Active
+[**→ View repository**](https://github.com/MajidAsghariTabrizi/anti-gravity-phoenix-v4)
 
 </td>
 <td width="50%" valign="top">
 
-### [smart-trader](https://github.com/MajidAsghariTabrizi/smart-trader)
-**Algorithmic trading system**
+### [Free Best Router](https://github.com/MajidAsghariTabrizi/free-best-router)
 
-Market analysis and automated decision-making for on-chain opportunities. Built around deterministic evaluation and bounded risk.
+**Intelligent routing for the free AI model ecosystem.**
 
-`Python` `Trading Logic` `Market Data` `Risk Controls`
+One OpenAI-compatible endpoint that discovers, ranks, health-checks, and routes across OpenRouter, Groq, Cerebras, Mistral, DeepSeek and more. Capability-aware scoring, bounded failover, smart exploration.
+
+`Node.js` `LLM Gateway` `Multi-Provider` `OpenAI-compatible`
+
+[**→ View repository**](https://github.com/MajidAsghariTabrizi/free-best-router)
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### [GMX](https://github.com/MajidAsghariTabrizi/GMX)
-**Perpetual DeFi integration**
+### [Universal Engineering Agent](https://github.com/MajidAsghariTabrizi/universal-engineering-agent)
 
-Direct integration with GMX -- one of the largest on-chain perpetual exchanges. Real infrastructure that interacts with real liquidity.
+**Operating kernel for AI-assisted engineering workflows.**
 
-`Python` `DeFi` `Perpetuals` `On-chain Execution`
+Reference implementation of the UEA contract. Profile-agnostic, deterministic failure classification, staged verification, bounded recovery. Sibling to free-best-router.
+
+`Node.js` `Operating Kernel` `Verification` `Failure Classification`
+
+[**→ View repository**](https://github.com/MajidAsghariTabrizi/universal-engineering-agent)
 
 </td>
 <td width="50%" valign="top">
 
-### [Arbitrum](https://github.com/MajidAsghariTabrizi/Arbitrum)
-**Where it started**
+### [SmartTrader](https://github.com/MajidAsghariTabrizi/smart-trader)
 
-Product management and web development work on the Arbitrum ecosystem. The L2 where everything else runs. Foundation for 5+ years of on-chain building.
+**Decision intelligence for systematic market analysis.**
 
-`Product` `Web Dev` `L2` `Ecosystem`
+Algorithmic trading infrastructure built around deterministic evaluation, risk controls, and bounded execution logic.
+
+`Python` `Trading Logic` `Market Data` `Risk Controls`
+
+[**→ View repository**](https://github.com/MajidAsghariTabrizi/smart-trader)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Felotin E-commerce](https://github.com/MajidAsghariTabrizi/felotin-ecommerce)
+
+**Historical record — where it started.**
+
+The original e-commerce build from 2020. Preserved as an authentic engineering artifact with its original Git history intact.
+
+`PHP` `Product` `Web` `Historical`
+
+[**→ View repository**](https://github.com/MajidAsghariTabrizi/felotin-ecommerce)
+
+</td>
+<td width="50%" valign="top">
+
+### [Majid Systems](https://github.com/MajidAsghariTabrizi/majid-systems)
+
+**Engineering portfolio — systems, products, and ideas.**
+
+A living record of what I build. Updated as systems ship.
+
+`TypeScript` `Portfolio` `Systems`
+
+[**→ View repository**](https://github.com/MajidAsghariTabrizi/majid-systems)
 
 </td>
 </tr>
@@ -134,133 +129,124 @@ Product management and web development work on the Arbitrum ecosystem. The L2 wh
 
 ---
 
-## The UEA + Free Best Router Ecosystem
+## Technical DNA
 
-```
-DSH session
-  +-- UEA kernel (engineering loop)
-        +-- llm block --> free-best-router --> upstream free providers
-```
+<table>
+<tr>
+<td width="33%" valign="top">
 
-| Project | Answers |
-|---|---|
-| [universal-engineering-agent](https://github.com/MajidAsghariTabrizi/universal-engineering-agent) | How should the agent perform engineering work reliably? |
-| [free-best-router](https://github.com/MajidAsghariTabrizi/free-best-router) | Which model should the agent use? |
+**AI & Intelligence**
 
-They are siblings. Stack, not overlap.
+`LLM Integration`
+`Multi-Provider Routing`
+`Capability-Aware Ranking`
+`Autonomous Agents`
+`DeepSeek Harness`
+`OpenAI-compatible APIs`
+
+</td>
+<td width="33%" valign="top">
+
+**Systems & Backend**
+
+`Rust`
+`Python`
+`TypeScript`
+`Solidity`
+`Go`
+`Node.js`
+
+</td>
+<td width="34%" valign="top">
+
+**Infrastructure & DevOps**
+
+`PostgreSQL`
+`NATS JetStream`
+`Docker`
+`Linux`
+`GitHub Actions`
+`Prometheus`
+
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+
+**Blockchain / Web3**
+
+`Arbitrum`
+`Aave V3`
+`Foundry`
+`Ethers.js`
+`Uniswap V3`
+`MEV Infrastructure`
+
+</td>
+<td width="33%" valign="top">
+
+**Data & Analytics**
+
+`Real-time Dashboards`
+`Event Processing`
+`Metabase`
+`Kibana`
+`PnL Reconciliation`
+`Observability`
+
+</td>
+<td width="34%" valign="top">
+
+**Product Engineering**
+
+`Product Architecture`
+`Developer Tools`
+`Marketplace Systems`
+`API Design`
+`System Design`
+`Open Source`
+
+</td>
+</tr>
+</table>
 
 ---
 
-## Technical Stack
-
-**Languages**
-`Rust` `Python` `TypeScript` `Solidity` `Go` `JavaScript`
-
-**Backend & Infrastructure**
-`FastAPI` `Node.js` `PostgreSQL` `Docker` `GitHub Actions` `Linux` `NATS JetStream`
-
-**AI / LLM Infrastructure**
-`Node.js` `OpenAI-Compatible APIs` `Multi-Provider Routing` `LLM Gateway Design` `Capability-Aware Ranking` `Runtime Health Models` `Streaming & Tool-Calling` `DeepSeek Harness`
-
-**Blockchain & DeFi**
-`Arbitrum` `Aave V3` `Foundry` `Ethers.js` `Uniswap V3` `GMX` `Atlas`
-
-**Data & Observability**
-`Metabase` `Kibana` `Prometheus` `Real-time Dashboards` `Event Processing`
-
-**AI & Automation**
-`LLM Integration` `Autonomous Agents` `Event-driven Systems`
-
----
-
-## Engineering Principles
+## Engineering Direction
 
 ```text
-Build systems that are observable.
-Automate what should not require humans.
-Prefer simple architectures over unnecessary complexity.
-Measure outcomes, not activity.
-Ship > observe > learn > improve.
+Phoenix v4              — continuous protected LIVE hunting across three revenue lanes
+Free Best Router        — v0.1.0 shipped, becoming the standard for free AI model routing
+Universal Engineering   — v0.1.0 shipped, DSH ecosystem integration underway
+LLM Tooling             — next-generation agent infrastructure for autonomous systems
 ```
 
-**Safety invariants I refuse to compromise on:**
-- Two independent providers required for any authority-bearing decision
-- Provider disagreement closes execution authority until fresh agreement
-- One global submission lock prevents conflicting transactions
-- Realized PnL recorded only after receipt and balance reconciliation
-- Unknown state blocks new authority -- no-alpha is not an error
+The systems I build are designed to answer one question: **Is this opportunity still profitable after every known cost, execution constraint, and uncertainty reserve?**
+
+No result is acted on unless every gate passes. A healthy production system can legitimately remain in a state where authority is available but no opportunity currently clears every threshold. That is correct behavior.
 
 ---
 
-## AI-Assisted Engineering
+## Open Source
 
-I am an AI-assisted engineer. AI accelerates implementation, testing, debugging, and documentation. But **product definition, architecture, economic policy, risk boundaries, and operational decisions remain human-owned**.
-
-The question I keep exploring: *How can a product-oriented builder coordinate financial engineering, blockchain infrastructure, and distributed systems with a much smaller team surface?*
-
-Phoenix is the answer I am shipping.
-free-best-router and universal-engineering-agent are the next ones.
-
----
-
-## GitHub Activity
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=MajidAsghariTabrizi&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=79c0ff&text_color=c9d1d9&ring_color=1f6feb&include_all_commits=true&count_private=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MajidAsghariTabrizi&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8"/>
-
-</div>
-
-<div align="center">
-
-[![GitHub Streak](https://streak-stats.demolab.com/?user=MajidAsghariTabrizi&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=ff6b35&currStreakLabel=58a6ff)](https://git.io/streak-stats)
-
-</div>
-
----
-
-## Current Focus
-
-```text
-Phoenix v4           > continuous protected LIVE hunting
-Aave lane            > armed, economic gate enforced
-Atlas solver         > armed, auction stream connected
-free-best-router     > v0.1.0 shipped, community adoption phase
-universal-engineering-agent > v0.1.0 shipped, DSH ecosystem launch
-LLM tooling          > next-gen agent infrastructure
-```
-
-**The terminal state I am working toward:**
-```text
-FIRST_POSITIVE_REALIZED_PNL
-```
-Valid only after: real transaction submitted > confirmed > balance-reconciled > positive net PnL recorded.
-
-A healthy production system can legitimately remain in:
-```text
-FULLY_LIVE_NO_ALPHA
-```
-Live. Authority available. No opportunity currently passing every gate. **That is correct behavior.**
-
----
-
-## Connect
-
-- [LinkedIn](https://www.linkedin.com/in/majid-asghari) -- for professional conversations
-- [GitHub](https://github.com/MajidAsghariTabrizi) -- for code and technical discussion
-- Open to interesting DeFi infrastructure, autonomous systems, and AI-assisted engineering conversations
+| Project | What it is | Status |
+|---|---|---|
+| [free-best-router](https://github.com/MajidAsghariTabrizi/free-best-router) | Intelligent router for free AI models — one endpoint, seven providers | v0.1.0 shipped · MIT |
+| [universal-engineering-agent](https://github.com/MajidAsghariTabrizi/universal-engineering-agent) | Operating kernel for AI-assisted engineering | v0.1.0 shipped · MIT |
+| [awesome-deepseek-harness](https://github.com/MajidAsghariTabrizi/awesome-deepseek-harness) | Curated DSH plugin ecosystem | Active |
+| [awesome-deepseek-harness-plugins](https://github.com/MajidAsghariTabrizi/awesome-deepseek-harness-plugins) | 11,000+ DSH plugins with search API | Active |
 
 ---
 
 <div align="center">
 
-**Built with curiosity. Shipped with care.**
-
-```text
-$ uptime
-5+ years in the chain
-$ _
 ```
+I build systems where many moving parts become one intelligent machine.
+```
+
+---
+
+[![GitHub followers](https://img.shields.io/github/followers/MajidAsghariTabrizi?style=flat&color=7c5cff&label=Followers)](https://github.com/MajidAsghariTabrizi?tab=followers)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Majid%20Asghari-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/majid-asghari)
 
 </div>
