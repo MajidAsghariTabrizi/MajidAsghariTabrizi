@@ -1,80 +1,140 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img" aria-labelledby="t d">
-<title id="t">Majid Asghari — Intelligence Systems Map</title>
-<desc id="d">An asymmetric technical constellation with a central MAJID core observing five primary domains — Product, AI, Systems, Infrastructure, Execution — connected through curved paths, with ghosted secondary signals and a periodic diagonal signal sweep.</desc>
+<title id="t">Intelligence Systems Map</title>
+<desc id="d">An asymmetric technical constellation drifting in a cosmic field: a central intelligence core observing five primary domains — Product, AI, Systems, Infrastructure, Execution — connected through slow-moving paths, with ghosted secondary signals, a starfield, soft nebula haze, and a periodic signal sweep.</desc>
 
 <defs>
-  <radialGradient id="bg" cx="50%" cy="50%" r="70%">
-    <stop offset="0%" stop-color="#0c0c14"/>
-    <stop offset="100%" stop-color="#050508"/>
+  <radialGradient id="bg" cx="50%" cy="46%" r="75%">
+    <stop offset="0%" stop-color="#0e0e1c"/>
+    <stop offset="55%" stop-color="#08080f"/>
+    <stop offset="100%" stop-color="#020203"/>
+  </radialGradient>
+  <radialGradient id="nebulaViolet" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.16"/>
+    <stop offset="100%" stop-color="#7c5cff" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="nebulaBlue" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#4a6bff" stop-opacity="0.10"/>
+    <stop offset="100%" stop-color="#4a6bff" stop-opacity="0"/>
   </radialGradient>
   <radialGradient id="cGlow" cx="50%" cy="50%" r="50%">
-    <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.22"/>
+    <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.26"/>
+    <stop offset="100%" stop-color="#7c5cff" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="coreInner" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#a98cff" stop-opacity="0.65"/>
+    <stop offset="100%" stop-color="#7c5cff" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.40"/>
     <stop offset="100%" stop-color="#7c5cff" stop-opacity="0"/>
   </radialGradient>
   <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0%" stop-color="#7c5cff" stop-opacity="0"/>
-    <stop offset="50%" stop-color="#7c5cff" stop-opacity="0.7"/>
+    <stop offset="50%" stop-color="#9a82ff" stop-opacity="0.8"/>
     <stop offset="100%" stop-color="#7c5cff" stop-opacity="0"/>
   </linearGradient>
   <pattern id="grid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
-    <path d="M60 0H0V60" fill="none" stroke="#7c5cff" stroke-width="0.3" opacity="0.09"/>
+    <path d="M60 0H0V60" fill="none" stroke="#7c5cff" stroke-width="0.3" opacity="0.08"/>
   </pattern>
 </defs>
 
 <!-- Background -->
 <rect width="1200" height="600" fill="url(#bg)"/>
-<rect width="1200" height="600" fill="url(#grid)" opacity="0.65"/>
+
+<!-- Nebula haze -->
+<g>
+  <animateTransform attributeName="transform" type="translate" values="0,0;10,-6;0,0" dur="70s" repeatCount="indefinite"/>
+  <ellipse cx="230" cy="480" rx="430" ry="250" fill="url(#nebulaViolet)"/>
+</g>
+<g>
+  <animateTransform attributeName="transform" type="translate" values="0,0;-8,8;0,0" dur="85s" repeatCount="indefinite"/>
+  <ellipse cx="990" cy="110" rx="400" ry="230" fill="url(#nebulaBlue)"/>
+</g>
+
+<rect width="1200" height="600" fill="url(#grid)" opacity="0.4"/>
+
+<!-- Starfield -->
+<g fill="#ffffff">
+  <circle cx="45" cy="60" r="0.9" opacity="0.35"/>
+  <circle cx="120" cy="340" r="0.7" opacity="0.25"/>
+  <circle cx="95" cy="480" r="1.1" opacity="0.4"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="4.5s" repeatCount="indefinite"/></circle>
+  <circle cx="200" cy="55" r="0.6" opacity="0.3"/>
+  <circle cx="330" cy="520" r="0.8" opacity="0.28"/>
+  <circle cx="400" cy="40" r="1.0" opacity="0.42"><animate attributeName="opacity" values="0.42;0.12;0.42" dur="5.2s" repeatCount="indefinite"/></circle>
+  <circle cx="470" cy="470" r="0.6" opacity="0.22"/>
+  <circle cx="540" cy="80" r="0.7" opacity="0.3"/>
+  <circle cx="610" cy="530" r="0.9" opacity="0.35"/>
+  <circle cx="700" cy="45" r="0.6" opacity="0.25"/>
+  <circle cx="760" cy="510" r="1.0" opacity="0.4"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="4.8s" repeatCount="indefinite"/></circle>
+  <circle cx="820" cy="60" r="0.7" opacity="0.28"/>
+  <circle cx="880" cy="470" r="0.8" opacity="0.32"/>
+  <circle cx="950" cy="90" r="1.1" opacity="0.45"><animate attributeName="opacity" values="0.45;0.14;0.45" dur="5.6s" repeatCount="indefinite"/></circle>
+  <circle cx="1020" cy="520" r="0.6" opacity="0.24"/>
+  <circle cx="1080" cy="60" r="0.9" opacity="0.36"/>
+  <circle cx="1140" cy="300" r="0.7" opacity="0.28"/>
+  <circle cx="1150" cy="480" r="0.6" opacity="0.22"/>
+  <circle cx="60" cy="220" r="0.8" opacity="0.3"/>
+  <circle cx="150" cy="160" r="0.6" opacity="0.2"/>
+  <circle cx="300" cy="180" r="0.9" opacity="0.34"><animate attributeName="opacity" values="0.34;0.1;0.34" dur="6s" repeatCount="indefinite"/></circle>
+  <circle cx="500" cy="220" r="0.6" opacity="0.24"/>
+  <circle cx="650" cy="180" r="0.8" opacity="0.3"/>
+  <circle cx="980" cy="240" r="0.7" opacity="0.26"/>
+  <circle cx="1100" cy="180" r="0.9" opacity="0.34"><animate attributeName="opacity" values="0.34;0.1;0.34" dur="5.4s" repeatCount="indefinite"/></circle>
+  <circle cx="360" cy="380" r="0.6" opacity="0.22"/>
+  <circle cx="730" cy="385" r="0.7" opacity="0.26"/>
+  <circle cx="870" cy="220" r="0.6" opacity="0.22"/>
+</g>
 
 <!-- Depth rings -->
 <g opacity="0.7">
   <animate attributeName="opacity" values="0.55;0.85;0.55" dur="45s" repeatCount="indefinite"/>
-  <circle cx="600" cy="300" r="380" fill="none" stroke="#7c5cff" stroke-width="0.4" opacity="0.08"/>
-  <circle cx="600" cy="300" r="490" fill="none" stroke="#7c5cff" stroke-width="0.3" opacity="0.06"/>
+  <circle cx="600" cy="300" r="380" fill="none" stroke="#7c5cff" stroke-width="0.4" opacity="0.09"/>
+  <circle cx="600" cy="300" r="490" fill="none" stroke="#7c5cff" stroke-width="0.3" opacity="0.07"/>
 </g>
 
 <!-- Orbital arcs -->
 <g>
   <animateTransform attributeName="transform" type="rotate" from="0 600 300" to="360 600 300" dur="180s" repeatCount="indefinite"/>
-  <circle cx="600" cy="300" r="200" fill="none" stroke="#7c5cff" stroke-width="0.5" opacity="0.10" stroke-dasharray="2 18"/>
+  <circle cx="600" cy="300" r="200" fill="none" stroke="#7c5cff" stroke-width="0.5" opacity="0.12" stroke-dasharray="2 18"/>
 </g>
 <g>
   <animateTransform attributeName="transform" type="rotate" from="360 600 300" to="0 600 300" dur="240s" repeatCount="indefinite"/>
-  <circle cx="600" cy="300" r="320" fill="none" stroke="#7c5cff" stroke-width="0.4" opacity="0.08" stroke-dasharray="2 30"/>
+  <circle cx="600" cy="300" r="320" fill="none" stroke="#7c5cff" stroke-width="0.4" opacity="0.09" stroke-dasharray="2 30"/>
 </g>
 
 <!-- Connection paths (static) -->
-<path d="M260,180 Q420,80 760,140" fill="none" stroke="#7c5cff" stroke-width="0.7" opacity="0.30"/>
-<path d="M760,140 Q900,220 900,380" fill="none" stroke="#7c5cff" stroke-width="0.7" opacity="0.32"/>
-<path d="M900,380 Q970,420 1010,470" fill="none" stroke="#7c5cff" stroke-width="0.7" opacity="0.35"/>
-<path d="M260,180 Q220,310 230,420" fill="none" stroke="#7c5cff" stroke-width="0.7" opacity="0.30"/>
-<path d="M230,420 Q620,480 1010,470" fill="none" stroke="#7c5cff" stroke-width="0.6" opacity="0.25"/>
-<path d="M900,380 Q560,440 230,420" fill="none" stroke="#7c5cff" stroke-width="0.5" opacity="0.20"/>
-<path d="M900,380 L600,300" fill="none" stroke="#7c5cff" stroke-width="0.5" opacity="0.18"/>
-<path d="M230,420 L600,300" fill="none" stroke="#7c5cff" stroke-width="0.5" opacity="0.18"/>
-<path d="M260,180 L600,300" fill="none" stroke="#7c5cff" stroke-width="0.5" opacity="0.18"/>
-<path d="M1010,470 L600,300" fill="none" stroke="#7c5cff" stroke-width="0.5" opacity="0.18"/>
+<path d="M260,180 Q420,80 760,140" fill="none" stroke="#7c5cff" stroke-width="0.8" opacity="0.40"/>
+<path d="M760,140 Q900,220 900,380" fill="none" stroke="#7c5cff" stroke-width="0.8" opacity="0.42"/>
+<path d="M900,380 Q970,420 1010,470" fill="none" stroke="#7c5cff" stroke-width="0.8" opacity="0.45"/>
+<path d="M260,180 Q220,310 230,420" fill="none" stroke="#7c5cff" stroke-width="0.8" opacity="0.40"/>
+<path d="M230,420 Q620,480 1010,470" fill="none" stroke="#7c5cff" stroke-width="0.7" opacity="0.32"/>
+<path d="M900,380 Q560,440 230,420" fill="none" stroke="#7c5cff" stroke-width="0.6" opacity="0.26"/>
+<path d="M900,380 L600,300" fill="none" stroke="#7c5cff" stroke-width="0.6" opacity="0.24"/>
+<path d="M230,420 L600,300" fill="none" stroke="#7c5cff" stroke-width="0.6" opacity="0.24"/>
+<path d="M260,180 L600,300" fill="none" stroke="#7c5cff" stroke-width="0.6" opacity="0.24"/>
+<path d="M1010,470 L600,300" fill="none" stroke="#7c5cff" stroke-width="0.6" opacity="0.24"/>
 
 <!-- Animated connection pulses -->
-<g stroke="#7c5cff" stroke-width="0.8" opacity="0.30" fill="none">
+<g stroke="#9a82ff" stroke-width="0.9" opacity="0.38" fill="none">
   <path d="M260,180 Q420,80 760,140"/>
   <animate attributeName="stroke-dashoffset" values="0;-60" dur="14s" repeatCount="indefinite" stroke-dasharray="60 60"/>
 </g>
-<g stroke="#7c5cff" stroke-width="0.8" opacity="0.32" fill="none">
+<g stroke="#9a82ff" stroke-width="0.9" opacity="0.4" fill="none">
   <path d="M760,140 Q900,220 900,380"/>
   <animate attributeName="stroke-dashoffset" values="0;-60" dur="16s" repeatCount="indefinite" stroke-dasharray="60 60" begin="2s"/>
 </g>
-<g stroke="#7c5cff" stroke-width="0.8" opacity="0.35" fill="none">
+<g stroke="#9a82ff" stroke-width="0.9" opacity="0.42" fill="none">
   <path d="M900,380 Q970,420 1010,470"/>
   <animate attributeName="stroke-dashoffset" values="0;-60" dur="13s" repeatCount="indefinite" stroke-dasharray="60 60" begin="4s"/>
 </g>
-<g stroke="#7c5cff" stroke-width="0.7" opacity="0.25" fill="none">
+<g stroke="#9a82ff" stroke-width="0.8" opacity="0.32" fill="none">
   <path d="M230,420 Q620,480 1010,470"/>
   <animate attributeName="stroke-dashoffset" values="0;-60" dur="17s" repeatCount="indefinite" stroke-dasharray="60 60" begin="6s"/>
 </g>
 
 <!-- Signal sweep -->
 <g>
-  <animate attributeName="opacity" values="0;0;0.6;0.6;0;0;0;0" dur="14s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0;0.65;0.65;0;0;0;0" dur="14s" repeatCount="indefinite"/>
   <animateTransform attributeName="transform" type="translate" values="-200,500;1400,-100" dur="14s" repeatCount="indefinite"/>
   <rect x="-2" y="-80" width="4" height="160" fill="url(#sweep)" opacity="0.95"/>
 </g>
@@ -82,98 +142,103 @@
 <!-- Activation rings -->
 <circle cx="260" cy="180" r="0" fill="none" stroke="#7c5cff" stroke-width="1.2" opacity="0">
   <animate attributeName="r" values="0;32;48" dur="2.4s" repeatCount="indefinite" begin="2.3s"/>
-  <animate attributeName="opacity" values="0;0.50;0" dur="2.4s" repeatCount="indefinite" begin="2.3s"/>
+  <animate attributeName="opacity" values="0;0.55;0" dur="2.4s" repeatCount="indefinite" begin="2.3s"/>
 </circle>
 <circle cx="760" cy="140" r="0" fill="none" stroke="#7c5cff" stroke-width="1.2" opacity="0">
   <animate attributeName="r" values="0;32;48" dur="2.4s" repeatCount="indefinite" begin="5.5s"/>
-  <animate attributeName="opacity" values="0;0.50;0" dur="2.4s" repeatCount="indefinite" begin="5.5s"/>
+  <animate attributeName="opacity" values="0;0.55;0" dur="2.4s" repeatCount="indefinite" begin="5.5s"/>
 </circle>
 <circle cx="900" cy="380" r="0" fill="none" stroke="#7c5cff" stroke-width="1.2" opacity="0">
   <animate attributeName="r" values="0;32;48" dur="2.4s" repeatCount="indefinite" begin="8.3s"/>
-  <animate attributeName="opacity" values="0;0.50;0" dur="2.4s" repeatCount="indefinite" begin="8.3s"/>
+  <animate attributeName="opacity" values="0;0.55;0" dur="2.4s" repeatCount="indefinite" begin="8.3s"/>
 </circle>
 <circle cx="1010" cy="470" r="0" fill="none" stroke="#7c5cff" stroke-width="1.2" opacity="0">
   <animate attributeName="r" values="0;32;48" dur="2.4s" repeatCount="indefinite" begin="10.7s"/>
-  <animate attributeName="opacity" values="0;0.50;0" dur="2.4s" repeatCount="indefinite" begin="10.7s"/>
+  <animate attributeName="opacity" values="0;0.55;0" dur="2.4s" repeatCount="indefinite" begin="10.7s"/>
 </circle>
 <circle cx="230" cy="420" r="0" fill="none" stroke="#7c5cff" stroke-width="1.2" opacity="0">
   <animate attributeName="r" values="0;32;48" dur="2.4s" repeatCount="indefinite" begin="12s"/>
-  <animate attributeName="opacity" values="0;0.50;0" dur="2.4s" repeatCount="indefinite" begin="12s"/>
+  <animate attributeName="opacity" values="0;0.55;0" dur="2.4s" repeatCount="indefinite" begin="12s"/>
 </circle>
 
 <!-- Secondary signals -->
-<g opacity="0.30">
+<g opacity="0.46">
   <animateTransform attributeName="transform" type="translate" values="0,0;1,1;0,0" dur="11s" repeatCount="indefinite"/>
-  <text x="180" y="120" font-family="'SF Mono',Consolas,monospace" font-size="8" fill="#7878a0" letter-spacing="1.5">OPEN SOURCE</text>
+  <text x="180" y="120" font-family="'SF Mono',Consolas,monospace" font-size="8" fill="#9494c4" letter-spacing="1.5">OPEN SOURCE</text>
 </g>
-<g opacity="0.30">
+<g opacity="0.46">
   <animateTransform attributeName="transform" type="translate" values="0,0;-1,-1;0,0" dur="13s" repeatCount="indefinite" begin="1s"/>
-  <text x="680" y="92" font-family="'SF Mono',Consolas,monospace" font-size="8" fill="#7878a0" letter-spacing="1.5">DEV TOOLS</text>
+  <text x="680" y="92" font-family="'SF Mono',Consolas,monospace" font-size="8" fill="#9494c4" letter-spacing="1.5">DEV TOOLS</text>
 </g>
-<g opacity="0.30">
+<g opacity="0.46">
   <animateTransform attributeName="transform" type="translate" values="0,0;1,-1;0,0" dur="12s" repeatCount="indefinite" begin="2s"/>
-  <text x="830" y="290" font-family="'SF Mono',Consolas,monospace" font-size="8" fill="#7878a0" letter-spacing="1.5">TRADING</text>
+  <text x="830" y="290" font-family="'SF Mono',Consolas,monospace" font-size="8" fill="#9494c4" letter-spacing="1.5">TRADING</text>
 </g>
-<g opacity="0.30">
+<g opacity="0.46">
   <animateTransform attributeName="transform" type="translate" values="0,0;1,1;0,0" dur="14s" repeatCount="indefinite" begin="3s"/>
-  <text x="1050" y="430" font-family="'SF Mono',Consolas,monospace" font-size="8" fill="#7878a0" letter-spacing="1.5">BLOCKCHAIN</text>
+  <text x="1050" y="430" font-family="'SF Mono',Consolas,monospace" font-size="8" fill="#9494c4" letter-spacing="1.5">BLOCKCHAIN</text>
 </g>
-<g opacity="0.30">
+<g opacity="0.46">
   <animateTransform attributeName="transform" type="translate" values="0,0;-1,1;0,0" dur="13s" repeatCount="indefinite" begin="4s"/>
-  <text x="140" y="450" font-family="'SF Mono',Consolas,monospace" font-size="8" fill="#7878a0" letter-spacing="1.5">AUTOMATION</text>
+  <text x="140" y="450" font-family="'SF Mono',Consolas,monospace" font-size="8" fill="#9494c4" letter-spacing="1.5">AUTOMATION</text>
 </g>
-<g opacity="0.30">
+<g opacity="0.46">
   <animateTransform attributeName="transform" type="translate" values="0,0;-1,-1;0,0" dur="15s" repeatCount="indefinite" begin="5s"/>
-  <text x="430" y="510" font-family="'SF Mono',Consolas,monospace" font-size="8" fill="#7878a0" letter-spacing="1.5">DATA</text>
+  <text x="430" y="510" font-family="'SF Mono',Consolas,monospace" font-size="8" fill="#9494c4" letter-spacing="1.5">DATA</text>
 </g>
-<g opacity="0.30">
+<g opacity="0.46">
   <animateTransform attributeName="transform" type="translate" values="0,0;2,-1;0,0" dur="14s" repeatCount="indefinite" begin="6s"/>
-  <text x="490" y="110" font-family="'SF Mono',Consolas,monospace" font-size="8" fill="#7878a0" letter-spacing="1.5">MARKETPLACES</text>
+  <text x="490" y="110" font-family="'SF Mono',Consolas,monospace" font-size="8" fill="#9494c4" letter-spacing="1.5">MARKETPLACES</text>
 </g>
 
 <!-- 01 — PRODUCT -->
 <g>
   <animateTransform attributeName="transform" type="translate" values="0,0;1,-1;0,0" dur="12s" repeatCount="indefinite"/>
-  <text x="260" y="158" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="11" font-weight="500" fill="#c0c0d8" letter-spacing="3.5">PRODUCT</text>
-  <text x="260" y="170" text-anchor="middle" font-family="'SF Mono',Consolas,monospace" font-size="5.5" fill="#7c5cff" letter-spacing="1.2" opacity="0.7">01</text>
-  <circle cx="260" cy="180" r="5.5" fill="#0a0a10" stroke="#7c5cff" stroke-width="1.3" opacity="0.95"/>
-  <circle cx="260" cy="180" r="2" fill="#7c5cff" opacity="0.80"/>
+  <circle cx="260" cy="180" r="20" fill="url(#nodeGlow)"/>
+  <text x="260" y="158" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="11" font-weight="500" fill="#d4d4ec" letter-spacing="3.5">PRODUCT</text>
+  <text x="260" y="170" text-anchor="middle" font-family="'SF Mono',Consolas,monospace" font-size="5.5" fill="#9a82ff" letter-spacing="1.2" opacity="0.85">01</text>
+  <circle cx="260" cy="180" r="5.5" fill="#0a0a10" stroke="#7c5cff" stroke-width="1.4" opacity="1"/>
+  <circle cx="260" cy="180" r="2" fill="#9a82ff" opacity="0.9"/>
 </g>
 
 <!-- 02 — AI -->
 <g>
   <animateTransform attributeName="transform" type="translate" values="0,0;-1,1;0,0" dur="13s" repeatCount="indefinite" begin="1s"/>
-  <text x="760" y="118" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="11" font-weight="500" fill="#c0c0d8" letter-spacing="3.5">AI</text>
-  <text x="760" y="130" text-anchor="middle" font-family="'SF Mono',Consolas,monospace" font-size="5.5" fill="#7c5cff" letter-spacing="1.2" opacity="0.7">02</text>
-  <circle cx="760" cy="140" r="5.5" fill="#0a0a10" stroke="#7c5cff" stroke-width="1.3" opacity="0.95"/>
-  <circle cx="760" cy="140" r="2" fill="#7c5cff" opacity="0.80"/>
+  <circle cx="760" cy="140" r="20" fill="url(#nodeGlow)"/>
+  <text x="760" y="118" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="11" font-weight="500" fill="#d4d4ec" letter-spacing="3.5">AI</text>
+  <text x="760" y="130" text-anchor="middle" font-family="'SF Mono',Consolas,monospace" font-size="5.5" fill="#9a82ff" letter-spacing="1.2" opacity="0.85">02</text>
+  <circle cx="760" cy="140" r="5.5" fill="#0a0a10" stroke="#7c5cff" stroke-width="1.4" opacity="1"/>
+  <circle cx="760" cy="140" r="2" fill="#9a82ff" opacity="0.9"/>
 </g>
 
 <!-- 03 — SYSTEMS -->
 <g>
   <animateTransform attributeName="transform" type="translate" values="0,0;1,1;0,0" dur="14s" repeatCount="indefinite" begin="2s"/>
-  <text x="900" y="358" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="14" font-weight="500" fill="#d0d0e8" letter-spacing="4">SYSTEMS</text>
-  <text x="900" y="370" text-anchor="middle" font-family="'SF Mono',Consolas,monospace" font-size="5.5" fill="#7c5cff" letter-spacing="1.2" opacity="0.7">03</text>
-  <circle cx="900" cy="380" r="6.5" fill="#0a0a10" stroke="#7c5cff" stroke-width="1.5" opacity="1"/>
-  <circle cx="900" cy="380" r="2.5" fill="#7c5cff" opacity="0.85"/>
+  <circle cx="900" cy="380" r="22" fill="url(#nodeGlow)"/>
+  <text x="900" y="358" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="14" font-weight="500" fill="#e2e2f4" letter-spacing="4">SYSTEMS</text>
+  <text x="900" y="370" text-anchor="middle" font-family="'SF Mono',Consolas,monospace" font-size="5.5" fill="#9a82ff" letter-spacing="1.2" opacity="0.85">03</text>
+  <circle cx="900" cy="380" r="6.5" fill="#0a0a10" stroke="#7c5cff" stroke-width="1.6" opacity="1"/>
+  <circle cx="900" cy="380" r="2.5" fill="#9a82ff" opacity="0.92"/>
 </g>
 
 <!-- 04 — INFRASTRUCTURE -->
 <g>
   <animateTransform attributeName="transform" type="translate" values="0,0;-1,2;0,0" dur="15s" repeatCount="indefinite" begin="3s"/>
-  <text x="230" y="398" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="10" font-weight="500" fill="#c0c0d8" letter-spacing="3">INFRASTRUCTURE</text>
-  <text x="230" y="410" text-anchor="middle" font-family="'SF Mono',Consolas,monospace" font-size="5.5" fill="#7c5cff" letter-spacing="1.2" opacity="0.7">04</text>
-  <circle cx="230" cy="420" r="5.5" fill="#0a0a10" stroke="#7c5cff" stroke-width="1.3" opacity="0.95"/>
-  <circle cx="230" cy="420" r="2" fill="#7c5cff" opacity="0.80"/>
+  <circle cx="230" cy="420" r="20" fill="url(#nodeGlow)"/>
+  <text x="230" y="398" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="10" font-weight="500" fill="#d4d4ec" letter-spacing="3">INFRASTRUCTURE</text>
+  <text x="230" y="410" text-anchor="middle" font-family="'SF Mono',Consolas,monospace" font-size="5.5" fill="#9a82ff" letter-spacing="1.2" opacity="0.85">04</text>
+  <circle cx="230" cy="420" r="5.5" fill="#0a0a10" stroke="#7c5cff" stroke-width="1.4" opacity="1"/>
+  <circle cx="230" cy="420" r="2" fill="#9a82ff" opacity="0.9"/>
 </g>
 
 <!-- 05 — EXECUTION -->
 <g>
   <animateTransform attributeName="transform" type="translate" values="0,0;2,-1;0,0" dur="16s" repeatCount="indefinite" begin="4s"/>
-  <text x="1010" y="448" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="13" font-weight="500" fill="#d0d0e8" letter-spacing="3.5">EXECUTION</text>
-  <text x="1010" y="460" text-anchor="middle" font-family="'SF Mono',Consolas,monospace" font-size="5.5" fill="#7c5cff" letter-spacing="1.2" opacity="0.7">05</text>
-  <circle cx="1010" cy="470" r="6.5" fill="#0a0a10" stroke="#7c5cff" stroke-width="1.5" opacity="1"/>
-  <circle cx="1010" cy="470" r="2.5" fill="#7c5cff" opacity="0.85"/>
+  <circle cx="1010" cy="470" r="22" fill="url(#nodeGlow)"/>
+  <text x="1010" y="448" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="13" font-weight="500" fill="#e2e2f4" letter-spacing="3.5">EXECUTION</text>
+  <text x="1010" y="460" text-anchor="middle" font-family="'SF Mono',Consolas,monospace" font-size="5.5" fill="#9a82ff" letter-spacing="1.2" opacity="0.85">05</text>
+  <circle cx="1010" cy="470" r="6.5" fill="#0a0a10" stroke="#7c5cff" stroke-width="1.6" opacity="1"/>
+  <circle cx="1010" cy="470" r="2.5" fill="#9a82ff" opacity="0.92"/>
 </g>
 
 <!-- Central core glow -->
@@ -185,15 +250,15 @@
 <!-- Core contour rings -->
 <g>
   <animateTransform attributeName="transform" type="rotate" from="0 600 300" to="-360 600 300" dur="200s" repeatCount="indefinite"/>
-  <circle cx="600" cy="300" r="56" fill="none" stroke="#7c5cff" stroke-width="0.7" opacity="0.35" stroke-dasharray="14 4 22 4 8 4"/>
+  <circle cx="600" cy="300" r="56" fill="none" stroke="#7c5cff" stroke-width="0.7" opacity="0.38" stroke-dasharray="14 4 22 4 8 4"/>
 </g>
 <g>
   <animateTransform attributeName="transform" type="rotate" from="0 600 300" to="360 600 300" dur="160s" repeatCount="indefinite"/>
-  <circle cx="600" cy="300" r="42" fill="none" stroke="#7c5cff" stroke-width="0.8" opacity="0.42" stroke-dasharray="30 8 4 8"/>
+  <circle cx="600" cy="300" r="42" fill="none" stroke="#7c5cff" stroke-width="0.8" opacity="0.46" stroke-dasharray="30 8 4 8"/>
 </g>
 
 <!-- Tick marks -->
-<g stroke="#7c5cff" stroke-width="0.6" opacity="0.35">
+<g stroke="#7c5cff" stroke-width="0.6" opacity="0.4">
   <line x1="600" y1="260" x2="600" y2="265"/>
   <line x1="624" y1="262" x2="622" y2="266.5"/>
   <line x1="643" y1="277" x2="639" y2="280"/>
@@ -214,11 +279,11 @@
 <!-- Scanning line -->
 <g>
   <animateTransform attributeName="transform" type="rotate" from="0 600 300" to="360 600 300" dur="10s" repeatCount="indefinite"/>
-  <line x1="572" y1="300" x2="628" y2="300" stroke="#7c5cff" stroke-width="0.6" opacity="0.30"/>
+  <line x1="572" y1="300" x2="628" y2="300" stroke="#7c5cff" stroke-width="0.6" opacity="0.32"/>
 </g>
 
 <!-- Crosshair -->
-<g stroke="#7c5cff" stroke-width="0.5" opacity="0.35">
+<g stroke="#7c5cff" stroke-width="0.5" opacity="0.38">
   <line x1="600" y1="278" x2="600" y2="285"/>
   <line x1="600" y1="315" x2="600" y2="322"/>
   <line x1="578" y1="300" x2="585" y2="300"/>
@@ -226,12 +291,15 @@
 </g>
 
 <!-- Inner ring -->
-<circle cx="600" cy="300" r="20" fill="none" stroke="#7c5cff" stroke-width="0.5" opacity="0.30"/>
+<circle cx="600" cy="300" r="20" fill="none" stroke="#7c5cff" stroke-width="0.5" opacity="0.32"/>
 
-<!-- Name -->
-<text x="600" y="297" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="16" font-weight="600" fill="#e0e0f0" letter-spacing="5">MAJID</text>
-
-<!-- Subtitle -->
-<text x="600" y="318" text-anchor="middle" font-family="'SF Mono',Consolas,monospace" font-size="6" fill="#7c5cff" letter-spacing="2" opacity="0.80">PRODUCT × AI × SYSTEMS</text>
+<!-- Core eye: soft glow + slow pulse, no label -->
+<circle cx="600" cy="300" r="16" fill="url(#coreInner)">
+  <animate attributeName="opacity" values="0.5;0.85;0.5" dur="6s" repeatCount="indefinite"/>
+</circle>
+<circle cx="600" cy="300" r="3" fill="#e4d9ff">
+  <animate attributeName="r" values="3;4.3;3" dur="3.2s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.85;1;0.85" dur="3.2s" repeatCount="indefinite"/>
+</circle>
 
 </svg>
