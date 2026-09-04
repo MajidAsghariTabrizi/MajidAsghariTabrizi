@@ -1,8 +1,8 @@
-<div align="center">
+﻿<div align="center">
 
 # MAJID ASGHARI
 
-**Product Lead × AI × Systems**
+**Product Lead Ã— AI Ã— Systems**
 
 Building intelligent systems, developer infrastructure & AI-native products.
 
@@ -20,7 +20,7 @@ Building intelligent systems, developer infrastructure & AI-native products.
 ### Systems Map
 
 <a href="systems-map.svg">
-<img src="systems-map.svg" width="900" alt="Majid Asghari — intelligence systems map: central core observing five domains connected through curved paths"/>
+<img src="systems-map.svg" width="900" alt="Majid Asghari â€” intelligence systems map: central core observing five domains connected through curved paths"/>
 </a>
 
 </div>
@@ -31,11 +31,11 @@ Building intelligent systems, developer infrastructure & AI-native products.
 
 <div align="center">
 
-*Actively designing, building, and shipping systems — not just collecting commits.*
+*Actively designing, building, and shipping systems â€” not just collecting commits.*
 
 <br/>
 
-<img src="https://bugbounded-readme-streak-stats.vercel.app/?user=MajidAsghariTabrizi&theme=tokyonight&hide_border=true" width="700"/>
+<img src="https://streak-stats.demolab.com/?user=MajidAsghariTabrizi&theme=tokyonight&hide_border=true" width="700"/>
 
 </div>
 
@@ -51,11 +51,11 @@ Building intelligent systems, developer infrastructure & AI-native products.
 
 **Safety-first blockchain execution infrastructure.**
 
-Fail-closed, AI-assisted financial system for Arbitrum. Three independent revenue lanes — Aave V3 liquidations, Atlas auction solving, and origin-aware DEX arbitrage. Dual-provider agreement, conservative economic gate, submission-unknown state machine, protected release lifecycle.
+Fail-closed, AI-assisted financial system for Arbitrum. Three independent revenue lanes â€” Aave V3 liquidations, Atlas auction solving, and origin-aware DEX arbitrage. Dual-provider agreement, conservative economic gate, submission-unknown state machine, protected release lifecycle.
 
 `Rust` `Solidity` `Go` `Python` `PostgreSQL` `NATS` `Docker`
 
-[**→ View repository**](https://github.com/MajidAsghariTabrizi/anti-gravity-phoenix-v4)
+[**â†’ View repository**](https://github.com/MajidAsghariTabrizi/anti-gravity-phoenix-v4)
 
 </td>
 <td width="50%" valign="top">
@@ -68,7 +68,7 @@ One OpenAI-compatible endpoint that discovers, ranks, health-checks, and routes 
 
 `Node.js` `LLM Gateway` `Multi-Provider` `OpenAI-compatible`
 
-[**→ View repository**](https://github.com/MajidAsghariTabrizi/free-best-router)
+[**â†’ View repository**](https://github.com/MajidAsghariTabrizi/free-best-router)
 
 </td>
 </tr>
@@ -83,7 +83,7 @@ Reference implementation of the UEA contract. Profile-agnostic, deterministic fa
 
 `Node.js` `Operating Kernel` `Verification` `Failure Classification`
 
-[**→ View repository**](https://github.com/MajidAsghariTabrizi/universal-engineering-agent)
+[**â†’ View repository**](https://github.com/MajidAsghariTabrizi/universal-engineering-agent)
 
 </td>
 <td width="50%" valign="top">
@@ -96,7 +96,7 @@ Algorithmic trading infrastructure built around deterministic evaluation, risk c
 
 `Python` `Trading Logic` `Market Data` `Risk Controls`
 
-[**→ View repository**](https://github.com/MajidAsghariTabrizi/smart-trader)
+[**â†’ View repository**](https://github.com/MajidAsghariTabrizi/smart-trader)
 
 </td>
 </tr>
@@ -105,26 +105,26 @@ Algorithmic trading infrastructure built around deterministic evaluation, risk c
 
 ### [Felotin E-commerce](https://github.com/MajidAsghariTabrizi/felotin-ecommerce)
 
-**Historical record — where it started.**
+**Historical record â€” where it started.**
 
 The original e-commerce build from 2020. Preserved as an authentic engineering artifact with its original Git history intact.
 
 `PHP` `Product` `Web` `Historical`
 
-[**→ View repository**](https://github.com/MajidAsghariTabrizi/felotin-ecommerce)
+[**â†’ View repository**](https://github.com/MajidAsghariTabrizi/felotin-ecommerce)
 
 </td>
 <td width="50%" valign="top">
 
 ### [Majid Systems](https://github.com/MajidAsghariTabrizi/majid-systems)
 
-**Engineering portfolio — systems, products, and ideas.**
+**Engineering portfolio â€” systems, products, and ideas.**
 
 A living record of what I build. Updated as systems ship.
 
 `TypeScript` `Portfolio` `Systems`
 
-[**→ View repository**](https://github.com/MajidAsghariTabrizi/majid-systems)
+[**â†’ View repository**](https://github.com/MajidAsghariTabrizi/majid-systems)
 
 </td>
 </tr>
@@ -218,10 +218,10 @@ A living record of what I build. Updated as systems ship.
 ## Engineering Direction
 
 ```text
-Phoenix v4              — continuous protected LIVE hunting across three revenue lanes
-Free Best Router        — v0.1.0 shipped, becoming the standard for free AI model routing
-Universal Engineering   — v0.1.0 shipped, DSH ecosystem integration underway
-LLM Tooling             — next-generation agent infrastructure for autonomous systems
+Phoenix v4              â€” continuous protected LIVE hunting across three revenue lanes
+Free Best Router        â€” v0.1.0 shipped, becoming the standard for free AI model routing
+Universal Engineering   â€” v0.1.0 shipped, DSH ecosystem integration underway
+LLM Tooling             â€” next-generation agent infrastructure for autonomous systems
 ```
 
 The systems I build are designed to answer one question: **Is this opportunity still profitable after every known cost, execution constraint, and uncertainty reserve?**
@@ -234,8 +234,8 @@ No result is acted on unless every gate passes. A healthy production system can 
 
 | Project | What it is | Status |
 |---|---|---|
-| [free-best-router](https://github.com/MajidAsghariTabrizi/free-best-router) | Intelligent router for free AI models — one endpoint, seven providers | v0.1.0 shipped · MIT |
-| [universal-engineering-agent](https://github.com/MajidAsghariTabrizi/universal-engineering-agent) | Operating kernel for AI-assisted engineering | v0.1.0 shipped · MIT |
+| [free-best-router](https://github.com/MajidAsghariTabrizi/free-best-router) | Intelligent router for free AI models â€” one endpoint, seven providers | v0.1.0 shipped Â· MIT |
+| [universal-engineering-agent](https://github.com/MajidAsghariTabrizi/universal-engineering-agent) | Operating kernel for AI-assisted engineering | v0.1.0 shipped Â· MIT |
 | [awesome-deepseek-harness](https://github.com/MajidAsghariTabrizi/awesome-deepseek-harness) | Curated DSH plugin ecosystem | Active |
 | [awesome-deepseek-harness-plugins](https://github.com/MajidAsghariTabrizi/awesome-deepseek-harness-plugins) | 11,000+ DSH plugins with search API | Active |
 
