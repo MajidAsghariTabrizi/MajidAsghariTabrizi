@@ -20,7 +20,7 @@ Building intelligent systems, developer infrastructure & AI-native products.
 ### Systems Map
 
 <a href="systems-map.svg">
-<img src="systems-map.svg" width="700" alt="Technical systems constellation — AI, Systems, Product, Automation, Blockchain, Trading, Infrastructure, Open Source, Developer Tools connected through an intelligent network"/>
+<img src="systems-map.svg" width="700" alt="Asymmetric intelligence constellation — central core with Product, AI, Systems, Infrastructure, and Execution domains connected through curved paths"/>
 </a>
 
 </div>
