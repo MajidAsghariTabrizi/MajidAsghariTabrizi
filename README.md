@@ -35,7 +35,7 @@ Building intelligent systems, developer infrastructure & AI-native products.
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=MajidAsghariTabrizi&bg_color=0d1117&color=7c5cff&line=7c5cff&point=ffffff&area=true&area_color=7c5cff&hide_border=true" width="900"/>
+<img src="https://bugbounded-readme-streak-stats.vercel.app/?user=MajidAsghariTabrizi&theme=tokyonight&hide_border=true" width="700"/>
 
 </div>
 
