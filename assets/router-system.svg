@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 300" role="img" aria-labelledby="routerTitle routerDesc">
+  <title id="routerTitle">Free Best Router: a decision layer over model infrastructure</title>
+  <desc id="routerDesc">An OpenAI-compatible request is classified into a task signature, ranked against neutral model candidates by capability, reliability, context, latency and health, then routed to one healthy candidate. Failed attempts trigger type-specific cooldown, fallback to the next eligible candidate, or a bounded 429 or 502 with Retry-After.</desc>
+  <defs>
+    <style>
+      text{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+      .label{fill:#898984;font-size:11px;letter-spacing:1.6px}
+      .micro{fill:#555550;font-size:9.5px;letter-spacing:1px}
+      .term{fill:#d8d4cb;font-size:13px;letter-spacing:.3px}
+      .panel{fill:#111111;stroke:#292929}
+      .row{fill:#121210;stroke:#2d2b27}
+      .selected{fill:#14161f;stroke:#495c98}
+      .rule{stroke:#292929;stroke-width:1}
+      .blue{fill:#6f86ff}
+      .blueText{fill:#a8b5ff}
+      .green{fill:#8ba676}
+      .orange{fill:#e8552f}
+      .warn{fill:#d1a45d}
+      .dim{fill:#898984}
+      .chip{fill:#101010;stroke:#2d2b27}
+      .edge{stroke:#3b3934;stroke-width:1}
+      .signal{stroke:#6f86ff;stroke-width:1.5;fill:none}
+      .fallback{stroke:#d1a45d;stroke-width:1.4;fill:none;stroke-dasharray:5 5}
+      .status{fill:#898984;font-size:9.5px;letter-spacing:1.1px}
+    </style>
+  </defs>
+
+  <rect width="1100" height="300" fill="#0b0b0b"/>
+  <text x="30" y="28" fill="#a8b5ff" font-size="15" font-weight="600" letter-spacing="1.5">FREE BEST ROUTER</text>
+  <text x="225" y="28" class="label">DECISION LAYER OVER MODEL INFRASTRUCTURE</text>
+  <text x="1070" y="28" text-anchor="end" class="label">OPENAI-COMPATIBLE · v0.1.0</text>
+  <path class="rule" d="M30 44H1070"/>
+
+  <g>
+    <rect x="30" y="64" width="192" height="190" class="panel"/>
+    <text x="46" y="88" class="label">00 REQUEST</text>
+    <rect x="46" y="104" width="160" height="36" class="chip"/>
+    <text x="58" y="126" class="term">TASK SIGNATURE</text>
+    <rect x="46" y="150" width="74" height="28" class="chip"/><text x="56" y="168" class="micro">TOOLS</text>
+    <rect x="132" y="150" width="74" height="28" class="chip"/><text x="142" y="168" class="micro">VISION</text>
+    <rect x="46" y="188" width="74" height="28" class="chip"/><text x="56" y="206" class="micro">STRUCT.</text>
+    <rect x="132" y="188" width="74" height="28" class="chip"/><text x="142" y="206" class="micro">CONTEXT</text>
+    <text x="46" y="240" class="micro">FREE-ONLY CANDIDATE POOL</text>
+  </g>
+
+  <g>
+    <rect x="252" y="64" width="450" height="190" class="panel"/>
+    <text x="268" y="88" class="label">01 RANKED CATALOG</text>
+    <text x="678" y="88" text-anchor="end" class="micro">HEALTH-AWARE RANKING</text>
+    <rect x="268" y="100" width="418" height="29" class="row"/>
+    <text x="282" y="119" class="term">candidate/07</text>
+    <text x="672" y="119" text-anchor="end" fill="#d1a45d" font-size="11" letter-spacing="1">429 · COOLDOWN</text>
+    <rect x="268" y="136" width="418" height="29" class="selected"/>
+    <path d="M268 136h3v29h-3z" fill="#6f86ff"/>
+    <text x="284" y="155" class="term">candidate/11</text>
+    <text x="672" y="155" text-anchor="end" fill="#a8b5ff" font-size="11" letter-spacing="1">SELECTED · HEALTHY</text>
+    <rect x="268" y="172" width="418" height="29" class="row"/>
+    <text x="282" y="191" class="term">candidate/14</text>
+    <text x="672" y="191" text-anchor="end" class="muted">UNAVAILABLE</text>
+    <rect x="268" y="208" width="418" height="29" class="row"/>
+    <text x="282" y="227" class="term">candidate/19</text>
+    <text x="672" y="227" text-anchor="end" class="dim">EXPLORATION POOL</text>
+    <text x="268" y="247" class="micro">CAPABILITY · AGENTIC QUALITY · RELIABILITY · CONTEXT · TOOLS · LATENCY · DECAY</text>
+  </g>
+
+  <g>
+    <rect x="732" y="64" width="338" height="190" class="panel"/>
+    <text x="748" y="88" class="label">02 ROUTE EXECUTION</text>
+    <rect x="748" y="102" width="88" height="34" fill="#14161f" stroke="#495c98"/>
+    <text x="760" y="123" class="blueText" font-size="12">SELECT</text>
+    <rect x="850" y="102" width="94" height="34" fill="#14161f" stroke="#495c98"/>
+    <text x="862" y="123" class="blueText" font-size="12">ATTEMPT</text>
+    <rect x="958" y="102" width="96" height="34" fill="#151611" stroke="#33402d"/>
+    <text x="970" y="123" fill="#8ba676" font-size="12">SUCCESS</text>
+    <path class="signal" d="M836 119h14M944 119h14"/>
+    <path class="fallback" d="M897 136v26"/>
+    <text x="748" y="178" class="term">FAIL → TYPE-SPECIFIC COOLDOWN</text>
+    <text x="748" y="202" class="term">NEXT ELIGIBLE → RETRY</text>
+    <path class="fallback" d="M748 214H1062"/>
+    <text x="748" y="236" class="micro">ALL POOLED: BOUNDED 429 / 502 + RETRY-AFTER</text>
+  </g>
+
+  <g>
+    <path d="M30 270H1070" class="rule"/>
+    <text x="30" y="288" class="status">DISCOVER</text>
+    <text x="164" y="288" class="status">NORMALIZE</text>
+    <text x="306" y="288" class="status">HEALTH-CHECK</text>
+    <text x="458" y="288" class="status">SCORE</text>
+    <text x="566" y="288" class="status">ROUTE</text>
+    <text x="664" y="288" class="status">RECORD OUTCOME</text>
+    <text x="866" y="288" class="status">FALL BACK</text>
+  </g>
+</svg>

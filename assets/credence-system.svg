@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 300" role="img" aria-labelledby="credenceTitle credenceDesc">
+  <title id="credenceTitle">Credence: evidence-first memory and durable missions</title>
+  <desc id="credenceDesc">Three verified Credence behaviors: a claim needs evidence before it can answer; correction supersedes an old claim without deleting it; and a killed process resumes from an append-only mission log in a clean process.</desc>
+  <defs>
+    <style>
+      text{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+      .label{fill:#898984;font-size:11px;letter-spacing:1.6px}
+      .micro{fill:#555550;font-size:9.5px;letter-spacing:1px}
+      .term{fill:#d8d4cb;font-size:13px;letter-spacing:.3px}
+      .panel{fill:#111111;stroke:#292929}
+      .row{fill:#121210;stroke:#2d2b27}
+      .rule{stroke:#292929;stroke-width:1}
+      .orange{fill:#e8552f}
+      .blue{fill:#7f97ff}
+      .green{fill:#8ba676}
+      .dim{fill:#898984}
+      .muted{fill:#555550}
+      .edge{stroke:#3b3934;stroke-width:1}
+      .signal{stroke:#e8552f;stroke-width:1.4;fill:none}
+      .status{fill:#898984;font-size:9.5px;letter-spacing:1.1px}
+    </style>
+  </defs>
+
+  <rect width="1100" height="300" fill="#0b0b0b"/>
+  <text x="30" y="28" fill="#e8552f" font-size="15" font-weight="600" letter-spacing="2">CREDENCE</text>
+  <text x="126" y="28" class="label">EVIDENCE-FIRST AGENT MEMORY</text>
+  <text x="1070" y="28" text-anchor="end" class="label">v0.2.0</text>
+  <path class="rule" d="M30 44H1070"/>
+
+  <g>
+    <rect x="30" y="64" width="302" height="190" class="panel"/>
+    <text x="46" y="88" class="label">01 EVIDENCE GATE</text>
+    <rect x="46" y="104" width="270" height="34" class="row"/>
+    <text x="60" y="125" class="term">CLAIM</text><text x="302" y="125" text-anchor="end" class="micro">ACTIVE</text>
+    <path class="signal" d="M181 138v14"/>
+    <rect x="46" y="156" width="270" height="34" class="row"/>
+    <text x="60" y="177" class="term">EVIDENCE</text><text x="302" y="177" text-anchor="end" class="micro">MEASURED</text>
+    <path class="signal" d="M181 190v14"/>
+    <rect x="46" y="208" width="270" height="30" fill="#151611" stroke="#33402d"/>
+    <text x="60" y="227" fill="#8ba676" font-size="12" letter-spacing=".5">ASK → SUPPORTED</text>
+    <text x="302" y="227" text-anchor="end" class="micro">COVERAGE ≥ .60</text>
+    <text x="46" y="249" fill="#e8552f" font-size="10" letter-spacing="1">NO EVIDENCE → UNKNOWN + WHY</text>
+  </g>
+
+  <g>
+    <rect x="356" y="64" width="326" height="190" class="panel"/>
+    <text x="372" y="88" class="label">02 CORRECTION WITHOUT DELETION</text>
+    <rect x="372" y="102" width="294" height="36" class="row"/>
+    <text x="386" y="124" class="term">CLAIM V1</text><text x="652" y="124" text-anchor="end" fill="#7f97ff" font-size="11" letter-spacing="1">SUPERSEDED</text>
+    <path d="M410 138v18" class="signal"/>
+    <path d="M405 150h10l-5 8z" fill="#e8552f"/>
+    <rect x="372" y="158" width="294" height="36" fill="#151611" stroke="#33402d"/>
+    <text x="386" y="180" class="term">CLAIM V2</text><text x="652" y="180" text-anchor="end" fill="#8ba676" font-size="11" letter-spacing="1">ACTIVE</text>
+    <g>
+      <rect x="372" y="210" width="112" height="27" fill="#101010" stroke="#2d2b27"/>
+      <text x="381" y="227" class="micro">CONTRADICTION</text>
+      <rect x="494" y="210" width="86" height="27" fill="#101010" stroke="#2d2b27"/>
+      <text x="503" y="227" class="micro">SUPERSEDE</text>
+      <rect x="590" y="210" width="76" height="27" fill="#101010" stroke="#2d2b27"/>
+      <text x="599" y="227" class="micro">HISTORY()</text>
+    </g>
+    <text x="372" y="249" class="micro">EVENTS APPEND · THE OLD CLAIM REMAINS INSPECTABLE</text>
+  </g>
+
+  <g>
+    <rect x="704" y="64" width="366" height="190" class="panel"/>
+    <text x="720" y="88" class="label">03 MISSION OUTLIVES PROCESS</text>
+    <text x="720" y="116" class="term">PROCESS A</text>
+    <path d="M820 111h26M854 111h26M888 111h26M922 111h26M956 111h26" stroke="#898984"/>
+    <path d="M817 107h8v8h-8zM851 107h8v8h-8zM885 107h8v8h-8zM919 107h8v8h-8zM953 107h8v8h-8z" fill="#898984"/>
+    <text x="1008" y="116" fill="#e8552f" font-size="12" font-weight="600">KILLED</text>
+    <rect x="720" y="134" width="334" height="32" fill="#141312" stroke="#3b3934"/>
+    <text x="734" y="154" class="term">missions.jsonl</text>
+    <text x="1040" y="154" text-anchor="end" class="micro">APPEND-ONLY FOLD</text>
+    <text x="720" y="192" class="term">PROCESS B</text>
+    <path d="M820 187h154" stroke="#8ba676"/>
+    <path d="M970 182l10 5-10 5z" fill="#8ba676"/>
+    <text x="1008" y="192" fill="#8ba676" font-size="12">RESUME</text>
+    <text x="720" y="224" class="micro">CLEAN PROCESS · ZERO SHARED MEMORY</text>
+    <text x="720" y="244" class="micro">5/8 DURABLE → MISSION-RESUMED → 8/8 COMPLETE</text>
+  </g>
+
+  <g>
+    <path d="M30 270H1070" class="rule"/>
+    <text x="30" y="288" class="status">AGENTS PROPOSE</text>
+    <text x="182" y="288" class="status">OWNER / LEAD COMMIT</text>
+    <text x="382" y="288" class="status">PRIVATE CLAIMS FILTERED</text>
+    <text x="620" y="288" class="status">UNKNOWN IS AN ANSWER</text>
+    <text x="858" y="288" class="status">HISTORY NEVER ERASES</text>
+  </g>
+</svg>

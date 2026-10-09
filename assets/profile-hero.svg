@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" role="img" aria-labelledby="heroTitle heroDesc">
+  <title id="heroTitle">From ambiguous problem to governed AI execution</title>
+  <desc id="heroDesc">A technical decision-machine diagram: an ambiguous problem passes through product judgment and system design, then through Credence for evidence-backed memory and Free Best Router for capability-aware routing, before bounded execution and a feedback loop that observes, learns, and updates.</desc>
+  <defs>
+    <style>
+      text{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+      .label{fill:#898984;font-size:11px;letter-spacing:1.7px}
+      .micro{fill:#555550;font-size:10px;letter-spacing:1.1px}
+      .head{fill:#f1eee7;font-size:16px;font-weight:600;letter-spacing:.4px}
+      .term{fill:#d8d4cb;font-size:13px;letter-spacing:.35px}
+      .panel{fill:#111111;stroke:#292929}
+      .strong{fill:#131311;stroke:#3b3934}
+      .rule{stroke:#292929;stroke-width:1}
+      .flow{fill:none;stroke:#f1eee7;stroke-width:1.7;stroke-linecap:square;opacity:.94}
+      .cred-flow{fill:none;stroke:#e8552f;stroke-width:1.6;stroke-linecap:square}
+      .route-flow{fill:none;stroke:#6f86ff;stroke-width:1.6;stroke-linecap:square}
+      .return{fill:none;stroke:#6b6862;stroke-width:1.1;stroke-dasharray:5 6}
+      .node{fill:#0b0b0b;stroke:#898984;stroke-width:1}
+      .accent-c{fill:#e8552f}
+      .accent-r{fill:#6f86ff}
+      .ok{fill:#7d9b69}
+      .warn{fill:#d1a45d}
+      .light{fill:#f1eee7}
+      .status{fill:#898984;font-size:10px;letter-spacing:1.25px}
+    </style>
+  </defs>
+
+  <rect width="1200" height="430" fill="#0b0b0b"/>
+  <g opacity=".34">
+    <path class="rule" d="M28 48H1172M28 382H1172M390 48V382M790 48V382"/>
+  </g>
+
+  <text x="28" y="30" class="label">MAJID ASGHARI · DECISION MACHINE</text>
+  <text x="1172" y="30" text-anchor="end" fill="#d8d4cb" font-size="11" letter-spacing="1.7">PRODUCT × SYSTEMS × AGENTIC AI</text>
+  <path class="rule" d="M28 42H1172"/>
+  <text x="28" y="64" class="micro">TRACE / PROBLEM → JUDGMENT → INTELLIGENCE → EXECUTION → LEARNING</text>
+
+  <g>
+    <rect x="28" y="140" width="140" height="108" class="panel"/>
+    <path d="M28 140h2v108h-2z" fill="#555550"/>
+    <text x="44" y="164" class="label">00 INPUT</text>
+    <text x="44" y="194" class="head">AMBIGUOUS</text>
+    <text x="44" y="215" class="head">PROBLEM</text>
+    <text x="44" y="237" class="micro">INTENT UNSET</text>
+  </g>
+
+  <g>
+    <rect x="212" y="132" width="205" height="122" class="strong"/>
+    <text x="228" y="156" class="label">01 PRODUCT JUDGMENT</text>
+    <text x="228" y="186" class="term">intent</text>
+    <text x="228" y="208" class="term">constraints</text>
+    <text x="228" y="230" class="term">economics</text>
+    <path d="M394 176h15M394 198h15M394 220h15" stroke="#3b3934"/>
+  </g>
+
+  <g>
+    <rect x="465" y="132" width="205" height="122" class="strong"/>
+    <text x="481" y="156" class="label">02 SYSTEM DESIGN</text>
+    <text x="481" y="186" class="term">state</text>
+    <text x="481" y="208" class="term">evidence</text>
+    <text x="481" y="230" class="term">orchestration</text>
+    <path d="M647 176h15M647 198h15M647 220h15" stroke="#3b3934"/>
+  </g>
+
+  <g>
+    <rect x="718" y="62" width="230" height="124" class="panel"/>
+    <path d="M718 62h230v3H718z" fill="#e8552f"/>
+    <text x="734" y="89" fill="#e8552f" font-size="16" font-weight="600" letter-spacing=".5">CREDENCE</text>
+    <text x="936" y="87" text-anchor="end" class="label">03A MEMORY</text>
+    <text x="734" y="117" class="term">evidence</text>
+    <text x="734" y="139" class="term">authority</text>
+    <text x="734" y="161" class="term">durable state</text>
+    <text x="734" y="177" class="micro">UNKNOWN · SUPERSEDED · RESUME</text>
+  </g>
+
+  <g>
+    <rect x="718" y="242" width="206" height="112" class="panel"/>
+    <path d="M718 242h206v3H718z" fill="#6f86ff"/>
+    <text x="734" y="268" fill="#a8b5ff" font-size="15" font-weight="600" letter-spacing=".4">FREE BEST ROUTER</text>
+    <text x="912" y="267" text-anchor="end" class="label">03B</text>
+    <text x="734" y="295" class="term">capability</text>
+    <text x="734" y="315" class="term">health</text>
+    <text x="734" y="335" class="term">fallback</text>
+  </g>
+
+  <g>
+    <rect x="1000" y="132" width="172" height="122" class="strong"/>
+    <text x="1015" y="156" class="label">04 EXECUTION</text>
+    <text x="1015" y="186" class="term">decision</text>
+    <text x="1015" y="208" class="term">action</text>
+    <text x="1015" y="230" class="term">trace</text>
+    <path d="M1146 176h12M1146 198h12M1146 220h12" stroke="#3b3934"/>
+  </g>
+
+  <g>
+    <path class="flow" d="M168 194h44"/>
+    <path class="flow" d="M417 194h48"/>
+    <path class="cred-flow" d="M670 174C692 160 700 144 718 130"/>
+    <path class="route-flow" d="M670 214C692 228 700 274 718 294"/>
+    <path class="cred-flow" d="M948 124C974 142 982 160 1000 176"/>
+    <path class="route-flow" d="M948 294C974 276 982 230 1000 214"/>
+    <path class="return" d="M1060 254v118H318V254"/>
+    <path d="M318 254l-5 -10h10z" fill="#898984"/>
+    <circle cx="212" cy="194" r="4" class="node"/>
+    <circle cx="465" cy="194" r="4" class="node"/>
+    <circle cx="670" cy="194" r="4" class="node"/>
+    <circle cx="1000" cy="194" r="4.5" fill="#0b0b0b" stroke="#f1eee7"/>
+    <text x="690" y="366" text-anchor="middle" class="label">OBSERVE → LEARN → UPDATE</text>
+    <text x="677" y="114" text-anchor="middle" class="micro">EVIDENCE GATE</text>
+    <text x="677" y="278" text-anchor="middle" class="micro">ROUTE GATE</text>
+  </g>
+
+  <g>
+    <path d="M28 390H1172" class="rule"/>
+    <rect x="28" y="405" width="7" height="7" class="ok"/><text x="44" y="412" class="status">EVIDENCE GATED</text>
+    <rect x="188" y="405" width="7" height="7" fill="#898984"/><text x="204" y="412" class="status">UNKNOWN ALLOWED</text>
+    <rect x="356" y="405" width="7" height="7" class="light"/><text x="372" y="412" class="status">AUTHORITY OWNER</text>
+    <rect x="532" y="405" width="7" height="7" class="accent-r"/><text x="548" y="412" class="status">ROUTE HEALTHY</text>
+    <rect x="704" y="405" width="7" height="7" class="ok"/><text x="720" y="412" class="status">STATE DURABLE</text>
+    <rect x="882" y="405" width="7" height="7" class="warn"/><text x="898" y="412" class="status">FAILURE BOUNDED</text>
+  </g>
+</svg>
