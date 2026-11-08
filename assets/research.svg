@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="210" viewBox="0 0 1200 210" role="img" aria-labelledby="title">
+<title id="title">The Gambler / A decision to do nothing can be the right result.</title>
+<defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#30464c" stroke-width=".5" opacity=".42"/></pattern></defs>
+<rect width="1200" height="210" rx="16" fill="#101e24"/>
+<rect width="1200" height="210" rx="16" fill="url(#grid)"/>
+<g font-family="Segoe UI,Arial,sans-serif"><text x="36" y="36" fill="#d6ed9c" font-size="14" font-weight="600" letter-spacing="2">05 / THE GAMBLER</text><text x="36" y="87" fill="#f4f0e7" font-size="38" font-weight="650" letter-spacing="-1">A decision to do nothing</text><text x="36" y="132" fill="#f4f0e7" font-size="38" font-weight="650" letter-spacing="-1">can be the right result.</text><text x="36" y="176" fill="#a7bbbf" font-size="14" font-weight="400" letter-spacing="1">CAUSAL PREDICTION / EXECUTION COSTS / PAPER TRADING</text><rect x="900" y="56" width="260" height="98" rx="49" fill="#d6ed9c" fill-opacity=".08" stroke="#70845d"/><text x="1030" y="115" fill="#d6ed9c" font-size="30" font-weight="600" text-anchor="middle" letter-spacing="2">NO_TRADE</text></g></svg>
